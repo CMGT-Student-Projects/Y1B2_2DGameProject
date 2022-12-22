@@ -1,0 +1,1 @@
+npcstate = npcStates.ready;
