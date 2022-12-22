@@ -12,3 +12,4 @@ if (enteredRoom && _exit != noone) {
 	obj_RoomManager.targetInstance = _exit.targetInstance;
 	enteredRoom = false;
 }
+
