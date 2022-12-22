@@ -27,7 +27,6 @@ enteredRoom = false;
 image_alpha=.7;
 
 
-
 // Player States
 enum playerState {
 	idle,
@@ -40,9 +39,6 @@ audio_listener_set_position(0,x,y,0);
 audio_listener_set_orientation(0,0,1,0,0,0,1);
 
 
-// Set up bobbing effect
-shift = 0.1;
-alarm[1] = 80;
 
 // Player Sprite array [myState][dir]
 // Idle
