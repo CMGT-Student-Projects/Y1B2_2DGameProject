@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_GB_grass",
+  "name": "obj_tree_forest",
   "spriteId": {
-    "name": "spr_GB_grass",
-    "path": "sprites/spr_GB_grass/spr_GB_grass.yy",
+    "name": "spr_tree_pond02",
+    "path": "sprites/spr_tree_pond02/spr_tree_pond02.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GB_Environment",
-    "path": "folders/Objects/GB_Environment.yy",
+    "name": "Environment",
+    "path": "folders/Objects/Environment.yy",
   },
 }

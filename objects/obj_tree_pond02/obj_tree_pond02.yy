@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_tree_pond02",
   "spriteId": {
-    "name": "spr_block_pink_16",
-    "path": "sprites/spr_block_pink_16/spr_block_pink_16.yy",
+    "name": "spr_tree_green",
+    "path": "sprites/spr_tree_green/spr_tree_green.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -29,11 +29,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"slowCollision","path":"objects/obj_par_environment/obj_par_environment.yy",},"objectId":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"value":"False",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "name": "Environment",
+    "path": "folders/Objects/Environment.yy",
   },
 }

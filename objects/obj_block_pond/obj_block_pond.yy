@@ -29,7 +29,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"slowCollision","path":"objects/obj_par_environment/obj_par_environment.yy",},"objectId":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"value":"False",},
+  ],
   "parent": {
     "name": "Blocks",
     "path": "folders/Objects/Blocks.yy",
