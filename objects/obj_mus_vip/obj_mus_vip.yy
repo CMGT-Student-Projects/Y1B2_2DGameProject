@@ -7,7 +7,7 @@
     "path": "sprites/spr_sound_VIP/spr_sound_VIP.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

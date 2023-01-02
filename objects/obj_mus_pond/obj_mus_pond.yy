@@ -7,7 +7,7 @@
     "path": "sprites/spr_sound_pond/spr_sound_pond.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

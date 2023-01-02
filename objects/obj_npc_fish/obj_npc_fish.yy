@@ -40,7 +40,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"haunt","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"True",},
   ],
   "parent": {
-    "name": "GB_NPCs",
-    "path": "folders/Objects/GB_NPCs.yy",
+    "name": "Final_NPCs",
+    "path": "folders/Objects/Final_NPCs.yy",
   },
 }

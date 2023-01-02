@@ -7,7 +7,7 @@
     "path": "sprites/spr_sound_main/spr_sound_main.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

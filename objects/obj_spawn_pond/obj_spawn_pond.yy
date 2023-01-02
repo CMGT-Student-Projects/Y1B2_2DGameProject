@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_tree_graveyard02",
+  "name": "obj_spawn_pond",
   "spriteId": {
-    "name": "spr_tree_graveyard02",
-    "path": "sprites/spr_tree_graveyard02/spr_tree_graveyard02.yy",
+    "name": "spr_sound_pond",
+    "path": "sprites/spr_sound_pond/spr_sound_pond.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -29,9 +29,11 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"slowCollision","path":"objects/obj_par_environment/obj_par_environment.yy",},"objectId":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"value":"False",},
+  ],
   "parent": {
-    "name": "Final_Environment",
-    "path": "folders/Objects/Final_Environment.yy",
+    "name": "Blocks",
+    "path": "folders/Objects/Control/Blocks.yy",
   },
 }
