@@ -5,7 +5,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 9,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -59,7 +59,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 32,
-    "yorigin": 57,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
   },
@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GB_Blocks",
-    "path": "folders/Sprites/GB_Blocks.yy",
+    "name": "Blocks",
+    "path": "folders/Sprites/Blocks.yy",
   },
 }

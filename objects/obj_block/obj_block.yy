@@ -34,6 +34,6 @@
   ],
   "parent": {
     "name": "Blocks",
-    "path": "folders/Objects/Blocks.yy",
+    "path": "folders/Objects/Control/Blocks.yy",
   },
 }

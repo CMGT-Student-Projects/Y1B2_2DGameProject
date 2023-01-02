@@ -38,7 +38,7 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && global.playerControl == true) {
 			
 		}
 		else {
-			if (nearbyNPC.dxCount>1){
+			if (nearbyNPC.dxCount!=1){
 				scr_dismissPrompt(npcPrompt,0);
 				iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
 				iii.textToShow = _questdx;

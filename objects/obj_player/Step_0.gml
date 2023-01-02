@@ -96,7 +96,9 @@ nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,
 	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.waiting || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.waiting) {
 		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
 	}
-
+	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.complete || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.complete) {
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
+	}
 }
 	if !nearbyNPC {
 		// Reset greeting

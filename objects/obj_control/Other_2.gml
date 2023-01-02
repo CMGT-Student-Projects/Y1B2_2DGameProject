@@ -3,6 +3,7 @@ global.playerControl = false;
 global.playername = "Abby Normal";
 global.gameOver = false;
 global.gameStart = false;
+global.zoneTime = 0;
 
 enum npcStates {
 	idle,
@@ -20,9 +21,9 @@ enum npcStates {
 2: complete + achoice
 3: complete + bchoice
 */
-global.isFish = 0;
-global.messyGrave = 0;
-global.ghostLove = 0;
-global.angelStatue = 0;
-global.chattyGhost = 0;
-global.cleanupCrew = 0;
+global.Q_isFish = 0;
+global.Q_messyGrave = 0;
+global.Q_ghostLove = 0;
+global.Q_angelStatue = 0;
+global.Q_chattyGhost = 0;
+global.Q_cleanup = 0;

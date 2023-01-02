@@ -6,6 +6,7 @@ function scr_hauntNPC(_object){
 			_object.npcstate=npcStates.isHaunted;
 			obj_player.hauntTarget = _object.id;
 			obj_player.hauntTargetSpr = _object.sprite_index;
+			obj_player.haunting = true;
 		}
 	}
 }

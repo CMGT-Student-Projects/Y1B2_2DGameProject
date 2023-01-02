@@ -1,0 +1,1 @@
+global.zoneTime = +1;
