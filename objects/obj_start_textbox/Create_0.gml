@@ -1,4 +1,4 @@
-textToShow = "Do you remember? Remember..\n \n ";
+textToShow = "Do you remember who you are?\n \n ";
 textToShow2 = "? \n \n is that... really you?";
 
 

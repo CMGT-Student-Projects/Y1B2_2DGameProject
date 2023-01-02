@@ -27,18 +27,17 @@ enteredRoom = false;
 image_alpha=.7;
 
 
-// Player States
-enum playerState {
-	idle,
-	walking,
-	isFish
-}
 
 // Create listener and set orientation
 audio_listener_set_position(0,x,y,0);
 audio_listener_set_orientation(0,0,1,0,0,0,1);
 
 
+// Player States
+enum playerState {
+	idle,
+	walking,
+}
 
 // Player Sprite array [myState][dir]
 // Idle
@@ -51,10 +50,5 @@ playerSpr[playerState.walking][0] = spr_player_walk_right;
 playerSpr[playerState.walking][1] = spr_player_walk_up;
 playerSpr[playerState.walking][2] = spr_player_walk_left;
 playerSpr[playerState.walking][3] = spr_player_walk_down;
-// Haunt: isFish
-playerSpr[playerState.isFish][0] = spr_npc_fishbowl_right;
-playerSpr[playerState.isFish][1] = spr_npc_fishbowl_right;
-playerSpr[playerState.isFish][2] = spr_npc_fishbowl_left;
-playerSpr[playerState.isFish][3] = spr_npc_fishbowl_left;
 
 

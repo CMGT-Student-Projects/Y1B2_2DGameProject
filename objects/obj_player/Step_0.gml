@@ -69,7 +69,12 @@ audio_listener_set_position(0,x,y,0);
 }
 
 // Auto-choose Sprite based on state and direction
-sprite_index = playerSpr[myState][dir];
+if(hauntTarget == noone) {
+	sprite_index = playerSpr[myState][dir];
+}
+else {
+	sprite_index = hauntTargetSpr;
+}
 
 // Depth Sorting
 depth =-y;
