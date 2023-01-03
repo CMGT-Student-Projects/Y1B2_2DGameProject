@@ -24,12 +24,3 @@ function scr_hauntNPCoff(_object){
 		}
 
 	}
-
-
-
-
-/*
-function scr_hauntItem(){
-
-}
-*/
