@@ -1,3 +1,4 @@
+var _dxComplete;
 var _declinetext;
 var _waitingtext;
 var _text;
@@ -16,17 +17,24 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == false) {
 		}
 	}
 
-// Create a quest Dialogue
-if (nearbyNPC && nearbyNPC.npcQuest == true && global.playerControl == true) {
-	if (nearbyNPC.npcstate == npcStates.ready && !instance_exists(obj_ui_dxContinue)){
-	_questdx = nearbyNPC.questBegin;
+// Create a quest Dialogue (BEGIN)
+if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.ready) {
+	state=nearbyNPC.dxCount;
 	_name = nearbyNPC.npcname;
 	_dxyes = nearbyNPC.dxYes;
 	_dxno = nearbyNPC.dxNo;
 	_dxescape = nearbyNPC.dxEscape;
-	
-	
-		if (nearbyNPC.dxCount=1){
+	_questdx = dxQuest[state]
+		if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal && !instance_exists(obj_ui_dxBegin)){
+			scr_dismissPrompt(npcPrompt,0);
+			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
+			iii.textToShow = _questdx;
+			iii.nameToShow = _name;
+			iii.dxEscape = _dxescape;
+			nearbyNPC.dxCount += 1;	
+		}
+		else {
+		if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal) {
 			scr_dismissPrompt(npcPrompt,0);
 			iii = instance_create_depth(x,y,-10000,obj_ui_dxBegin);
 			iii.textToShow = _questdx;
@@ -34,23 +42,12 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && global.playerControl == true) {
 			iii.dxYes = _dxyes;
 			iii.dxNo = _dxno;
 			iii.dxEscape = _dxescape;
-			
-			
-		}
-		else {
-			if (nearbyNPC.dxCount!=1){
-				scr_dismissPrompt(npcPrompt,0);
-				iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
-				iii.textToShow = _questdx;
-				iii.nameToShow = _name;
-				iii.dxEscape = _dxescape;
-		}
-		}
-	}
+			nearbyNPC.dxCount = 1;	
+		}	
+}	
 }
 
-// NPC Quest Accepted or Rejected
-
+#region // NPC Quest TEXTbox based on npcStates enum
 if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 	_text = nearbyNPC.myText;
 	if(nearbyNPC.npcstate == npcStates.waiting) {
@@ -62,17 +59,39 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 			iii.textToShow = _waitingtext;
 		}
 	}
-	else {
-		if(nearbyNPC.npcstate == npcStates.decline) {
+	if(nearbyNPC.npcstate == npcStates.idle) {
 	
-			if (!instance_exists(obj_textbox)) {
-				_declinetext = nearbyNPC.declineText;
+		if (!instance_exists(obj_textbox)) {
+			_waitingtext = nearbyNPC.myText;
 		
-				iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-300,-10000,obj_textbox);
-				iii.textToShow = _declinetext;
-			}
+			iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-300,-10000,obj_textbox);
+			iii.textToShow = _waitingtext;
 		}
+	}	
+	if(nearbyNPC.npcstate == npcStates.decline) {
+		if (!instance_exists(obj_textbox)) {
+			_declinetext = nearbyNPC.declineText;
+
+			iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-300,-10000,obj_textbox);
+			iii.textToShow = _declinetext;
+		}
+
 	}
 }
+#endregion
 
-// Check if Quest Complete
+// Create Quest Dialogue: NPC Quest Completed 
+if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
+	if (nearbyNPC.npcstate = npcStates.complete) {
+	_name = nearbyNPC.npcname;
+	_dxComplete = nearbyNPC.dxComplete;
+	_questdx = nearbyNPC.text
+			scr_dismissPrompt(npcPrompt,0);
+			iii = instance_create_depth(x,y,-10000,obj_ui_dxClose);
+			iii.textToShow = _questdx;
+			iii.nameToShow = _name;
+			iii.dxComplete = _dxComplete;
+			nearbyNPC.npcstate = npcStates.idle;
+			
+	}
+}

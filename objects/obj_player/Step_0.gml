@@ -125,3 +125,15 @@ if (tutorial==0) {
 	tutorial=1
 }
 
+//NPC dialogue [npc quest count][count#]
+if(nearbyNPC){
+dxQuest[1] = nearbyNPC.questBegin;
+dxQuest[2] = nearbyNPC.questBegin02;
+dxQuest[3] = nearbyNPC.questBegin03;
+dxQuest[4] = nearbyNPC.questBegin04;
+}
+
+// Debug messages
+if (nearbyNPC) {
+	show_debug_message(nearbyNPC.dxCount,nearbyNPC.dxCountTotal)
+}

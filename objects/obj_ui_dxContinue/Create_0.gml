@@ -1,6 +1,7 @@
 // Textbox variables
-textToShow = "Put whatever text you like into this string!"
-textContinue = "Enter: Continue"
+textToShow = "Put whatever text you like into this string!";
+textContinue = "Space: Continue";
+textClose = "Esc: Stop listening";
 textWidth = 650;
 lineHeight = 28;
 global.playerControl = false;
