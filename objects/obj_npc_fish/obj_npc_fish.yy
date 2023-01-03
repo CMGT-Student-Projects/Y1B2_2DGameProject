@@ -40,7 +40,6 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"declineText","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"That's okay.. I guess..\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dxEscape","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"Maybe later?\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"haunt","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"True",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"questID","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"Q_isFish",},
   ],
   "parent": {
     "name": "Final_NPCs",

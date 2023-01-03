@@ -2,7 +2,7 @@ var _x;
 var _y;
 
 // Quest Complete: Good Ending
-if (npcstate == npcStates.idle && global.Q_isFish == 2) {
+if (npcstate == npcStates.idle) {
 	_x = obj_npc_fish.x;
 	_y = obj_npc_fish.y;
 	instance_destroy();

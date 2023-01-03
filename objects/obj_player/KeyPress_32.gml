@@ -85,7 +85,7 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 	if (nearbyNPC.npcstate = npcStates.complete) {
 	_name = nearbyNPC.npcname;
 	_dxComplete = nearbyNPC.dxComplete;
-	_questdx = nearbyNPC.text
+	_questdx = nearbyNPC.questComplete
 			scr_dismissPrompt(npcPrompt,0);
 			iii = instance_create_depth(x,y,-10000,obj_ui_dxClose);
 			iii.textToShow = _questdx;
