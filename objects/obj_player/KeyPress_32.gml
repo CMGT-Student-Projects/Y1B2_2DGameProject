@@ -34,7 +34,7 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.r
 			nearbyNPC.dxCount += 1;	
 		}
 		else {
-		if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal) {
+		if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal && !instance_exists(obj_ui_dxBegin)) {
 			scr_dismissPrompt(npcPrompt,0);
 			iii = instance_create_depth(x,y,-10000,obj_ui_dxBegin);
 			iii.textToShow = _questdx;

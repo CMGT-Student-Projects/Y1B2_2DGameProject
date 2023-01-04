@@ -133,7 +133,14 @@ dxQuest[3] = nearbyNPC.questBegin03;
 dxQuest[4] = nearbyNPC.questBegin04;
 }
 
+// Particle System: If NPC Can be Haunted
+if (nearbyNPC && nearbyNPC.haunt == true && haunting == false && nearbyNPC.npcstate = npcStates.waiting) {
+	part_particles_create(global.P_system, nearbyNPC.x+10, nearbyNPC.y - 20, global.particle1, 1);
+	part_particles_create(global.P_system, nearbyNPC.x-10, nearbyNPC.y - 20, global.particle1, 1);
+}
+
 // Debug messages
 if (nearbyNPC) {
 	show_debug_message(nearbyNPC.dxCount,nearbyNPC.dxCountTotal)
 }
+

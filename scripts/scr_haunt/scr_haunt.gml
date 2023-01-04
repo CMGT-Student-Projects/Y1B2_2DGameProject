@@ -3,6 +3,8 @@ function scr_hauntNPC(_object){
 	if (instance_exists(_object) && _object.npcstate == npcStates.waiting && _object.haunt == true) {
 		if(obj_player.hauntTarget == noone){
 			_object.image_alpha=0;
+			_object.x = 0;
+			_object.y = 0;
 			_object.npcstate=npcStates.isHaunted;
 			obj_player.hauntTarget = _object.id;
 			obj_player.hauntTargetSpr = _object.sprite_index;
@@ -21,6 +23,7 @@ function scr_hauntNPCoff(_object){
 		_object.npcstate=npcStates.waiting;
 		obj_player.myState = playerState.idle;
 		obj_player.hauntTarget = noone;
+		obj_player.haunting = false;
 		}
 
 	}
