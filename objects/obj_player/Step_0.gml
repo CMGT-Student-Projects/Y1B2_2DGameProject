@@ -125,13 +125,54 @@ if (tutorial==0) {
 	tutorial=1
 }
 
+#region NPC Dialogue Arrays questBegin, questMid
 //NPC dialogue [npc quest count][count#]
 if(nearbyNPC){
-dxQuest[1] = nearbyNPC.questBegin;
-dxQuest[2] = nearbyNPC.questBegin02;
-dxQuest[3] = nearbyNPC.questBegin03;
-dxQuest[4] = nearbyNPC.questBegin04;
+	dxQuest[1] = nearbyNPC.questBegin;
+	dxQuest[2] = nearbyNPC.questBegin02;
+	dxQuest[3] = nearbyNPC.questBegin03;
+	dxQuest[4] = nearbyNPC.questBegin04;
+	//NPC dialogue MID [npc quest count][count#]
+	dxQuestMid[1] = nearbyNPC.questMid01;
+		if variable_instance_exists(nearbyNPC.id, "questMid02"){
+			dxQuestMid[2] = nearbyNPC.questMid02;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid03"){
+			dxQuestMid[3] = nearbyNPC.questMid03;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid04"){
+			dxQuestMid[2] = nearbyNPC.questMid04;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid05"){
+			dxQuestMid[3] = nearbyNPC.questMid05;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid06"){
+			dxQuestMid[2] = nearbyNPC.questMid06;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid07"){
+			dxQuestMid[3] = nearbyNPC.questMid07;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid08"){
+			dxQuestMid[2] = nearbyNPC.questMid08;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid09"){
+			dxQuestMid[3] = nearbyNPC.questMid09;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid10"){
+			dxQuestMid[2] = nearbyNPC.questMid10;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid11"){
+			dxQuestMid[3] = nearbyNPC.questMid11;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid04"){
+			dxQuestMid[2] = nearbyNPC.questMid04;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid05"){
+			dxQuestMid[3] = nearbyNPC.questMid05;
+		}
+
 }
+#endregion
 
 // Particle System: If NPC Can be Haunted
 if (nearbyNPC && nearbyNPC.haunt == true && haunting == false && nearbyNPC.npcstate = npcStates.waiting) {
@@ -139,8 +180,4 @@ if (nearbyNPC && nearbyNPC.haunt == true && haunting == false && nearbyNPC.npcst
 	part_particles_create(global.P_system, nearbyNPC.x-10, nearbyNPC.y - 20, global.particle1, 1);
 }
 
-// Debug messages
-if (nearbyNPC) {
-	show_debug_message(nearbyNPC.dxCount,nearbyNPC.dxCountTotal)
-}
 

@@ -48,7 +48,12 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questBegin03","varType":2,"value":"\"Last Call for Help\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questBegin04","varType":2,"value":"\"04\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"midQuest","varType":3,"value":"False","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questMid01","varType":2,"value":"\"npc state: waiting \\n\\n01\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidYes","varType":2,"value":"\"Yes\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidNo","varType":2,"value":"\"No\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidEsc","varType":2,"value":"\"Let me come back\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questComplete","varType":2,"value":"\"Quest completed dialogue. \\n\\n01\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxCountTotal_Mid","varType":0,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {

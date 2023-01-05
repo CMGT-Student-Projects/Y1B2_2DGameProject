@@ -30,12 +30,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,},
   ],
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"quest_mid_01","varType":2,"value":"\"The water in your bowl sloshes as you move towards the bird. \\n\\nYour control of the haunt isn't strong enough to do anything but drop the bowl on its side.\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidYes","varType":2,"value":"\"Save the Bird\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidNo","varType":2,"value":"\"Save the Fish\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidEsc","varType":2,"value":"\"Try something else\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-  ],
+  "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"Injured Bird\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"questBegin","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"\\u0022 Chirp.. chirp..\\u0022\\n\\nThis bird seems very weak. Maybe if you had a way to bring it some water?\"",},
@@ -45,7 +40,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"waitingText","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"The bird chirps hopefully in your direction\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"declineText","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"The bird seems weaker every time you walk by.\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"myText","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"Chirp",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"midQuest","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"midQuest","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"False",},
   ],
   "parent": {
     "name": "GB_NPCs",
