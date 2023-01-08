@@ -2,7 +2,7 @@ textToShow = "Do you remember who you are?\n \n ";
 textToShow2 = "? \n \n is that... really you?";
 
 
-depth=-10000;
+depth=-9999;
 image_alpha=.7;
 
 

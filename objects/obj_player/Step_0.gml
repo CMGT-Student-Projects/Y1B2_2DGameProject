@@ -40,6 +40,8 @@ if (vx != 0 || vy != 0) {
 	if !collision_point(x,y+vy,obj_par_environment,true,true) {
 		y += vy;
 }
+
+
 // Change direction based on movement
 if (vx > 0) {
 	dir = 0;
@@ -69,18 +71,18 @@ audio_listener_set_position(0,x,y,0);
 }
 
 // Auto-choose Sprite based on state and direction
-if(hauntTarget == noone) {
+if(hauntTarget == noone && hauntTargetItem == noone) {
 	sprite_index = playerSpr[myState][dir];
 }
 else {
+	if  (hauntTarget != noone || hauntTargetItem != noone) {
 	sprite_index = hauntTargetSpr;
+	}
 }
 
 // Depth Sorting
 depth =-y;
 
-// Check for collision with NPCs
-nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,obj_par_npc,false,true);
 	if nearbyNPC {
 // Play greeting sound
 	if (hasGreeted == false && nearbyNPC.npcstate!=npcStates.isHaunted) {
@@ -89,7 +91,8 @@ nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,
 		hasGreeted = true;
 		}
 	}
-// Pop up prompt
+#region Popup prompts: NPCs
+// Pop up prompt NPC
 	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.ready || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.ready) {
 		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
 	}
@@ -99,6 +102,7 @@ nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,
 	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.complete || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.complete) {
 		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
 	}
+	#endregion
 }
 	if !nearbyNPC {
 		// Reset greeting
@@ -174,10 +178,6 @@ if(nearbyNPC){
 }
 #endregion
 
-// Particle System: If NPC Can be Haunted
-if (nearbyNPC && nearbyNPC.haunt == true && haunting == false && nearbyNPC.npcstate = npcStates.waiting) {
-	part_particles_create(global.P_system, nearbyNPC.x+10, nearbyNPC.y - 20, global.particle1, 1);
-	part_particles_create(global.P_system, nearbyNPC.x-10, nearbyNPC.y - 20, global.particle1, 1);
-}
+
 
 

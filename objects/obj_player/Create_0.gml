@@ -11,6 +11,7 @@ moveDown = 0;
 tutorial = 0;
 
 nearbyNPC = noone;
+nearbyItem = noone;
 lookRange = 200;
 hasGreeted = false;
 npcPrompt = noone;

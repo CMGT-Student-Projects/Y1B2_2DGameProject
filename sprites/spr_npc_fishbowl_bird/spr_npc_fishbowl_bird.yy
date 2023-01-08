@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_npc_fishbowl_bird_strip02",
+  "name": "spr_npc_fishbowl_bird",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -37,7 +37,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_npc_fishbowl_bird_strip02",
+    "name": "spr_npc_fishbowl_bird",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 2.0,
@@ -49,11 +49,11 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"267a05b2-ab0b-458c-905c-52d5204f620c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ffe8fba-23af-4c1c-a25d-ac0339506bcc","path":"sprites/spr_npc_fishbowl_bird_strip02/spr_npc_fishbowl_bird_strip02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"b403bc4e-4912-4317-bef4-fcf7bfdb1c44","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ce4a801-c1ae-4f84-a539-3223864afe94","path":"sprites/spr_npc_fishbowl_bird_strip02/spr_npc_fishbowl_bird_strip02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9cd090c5-2888-4505-b215-f6d085c82529","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c146f6a-6433-423a-bf4a-3a37d765b531","path":"sprites/spr_npc_fishbowl_bird_strip02/spr_npc_fishbowl_bird_strip02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"bffbbbde-4b41-47ce-8243-e3a9ce932bb8","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bef54d24-1f1e-4208-b2f7-12d0238ce960","path":"sprites/spr_npc_fishbowl_bird_strip02/spr_npc_fishbowl_bird_strip02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"7eed221f-5cf5-4fb6-ba6e-2d11afb29ad0","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9a9386b-d455-495e-9439-8ebc2ff83b44","path":"sprites/spr_npc_fishbowl_bird_strip02/spr_npc_fishbowl_bird_strip02.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"267a05b2-ab0b-458c-905c-52d5204f620c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ffe8fba-23af-4c1c-a25d-ac0339506bcc","path":"sprites/spr_npc_fishbowl_bird/spr_npc_fishbowl_bird.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b403bc4e-4912-4317-bef4-fcf7bfdb1c44","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ce4a801-c1ae-4f84-a539-3223864afe94","path":"sprites/spr_npc_fishbowl_bird/spr_npc_fishbowl_bird.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9cd090c5-2888-4505-b215-f6d085c82529","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c146f6a-6433-423a-bf4a-3a37d765b531","path":"sprites/spr_npc_fishbowl_bird/spr_npc_fishbowl_bird.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bffbbbde-4b41-47ce-8243-e3a9ce932bb8","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bef54d24-1f1e-4208-b2f7-12d0238ce960","path":"sprites/spr_npc_fishbowl_bird/spr_npc_fishbowl_bird.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7eed221f-5cf5-4fb6-ba6e-2d11afb29ad0","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9a9386b-d455-495e-9439-8ebc2ff83b44","path":"sprites/spr_npc_fishbowl_bird/spr_npc_fishbowl_bird.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

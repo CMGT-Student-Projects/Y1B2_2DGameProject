@@ -15,6 +15,16 @@ enum npcStates {
 	decline
 }
 
+enum itemStates {
+	isHaunted,
+	notHaunted
+}
+enum itemQStates {
+	 Inactive,
+	 Available,
+	 Complete,
+ }
+
 /* // Quest Status
 0: inactive
 1: accepted

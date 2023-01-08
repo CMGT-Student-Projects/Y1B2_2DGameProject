@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "GB_Player",
-    "path": "folders/Sprites/GB_Player.yy",
+    "name": "Effects",
+    "path": "folders/Sprites/Effects.yy",
   },
 }

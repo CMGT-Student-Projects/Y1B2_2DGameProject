@@ -13,3 +13,4 @@ if (enteredRoom && _exit != noone) {
 	enteredRoom = false;
 }
 
+
