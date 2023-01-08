@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Title_No",
   "spriteId": {
-    "name": "spr_redblock",
-    "path": "sprites/spr_redblock/spr_redblock.yy",
+    "name": "spr_block_ButtonNo",
+    "path": "sprites/spr_block_ButtonNo/spr_block_ButtonNo.yy",
   },
   "solid": false,
   "visible": true,

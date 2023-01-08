@@ -17,8 +17,9 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_112212FC","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_bear","path":"objects/obj_npc_bear/obj_npc_bear.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1760.0,"y":480.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C4445E7","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_bird","path":"objects/obj_npc_bird/obj_npc_bird.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1984.0,"y":2240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_112212FC","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_bear","path":"objects/obj_npc_bear/obj_npc_bear.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1760.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C4445E7","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_bird","path":"objects/obj_npc_bird/obj_npc_bird.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":2624.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25A32D8F","properties":[],"isDnd":false,"objectId":{"name":"obj_item_campfire","path":"objects/obj_item_campfire/obj_item_campfire.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2048.0,"y":1824.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Transitions","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EC0000C","properties":[
@@ -84,6 +85,7 @@
     {"name":"rm_For_arrow_NW","path":"rooms/rm_game_Forest/rm_game_Forest.yy",},
     {"name":"inst_348304E8","path":"rooms/rm_game_Forest/rm_game_Forest.yy",},
     {"name":"rm_For_arrow_S","path":"rooms/rm_game_Forest/rm_game_Forest.yy",},
+    {"name":"inst_25A32D8F","path":"rooms/rm_game_Forest/rm_game_Forest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

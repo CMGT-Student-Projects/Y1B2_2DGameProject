@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_block_pond",
   "spriteId": {
-    "name": "spr_block_blue",
-    "path": "sprites/spr_block_blue/spr_block_blue.yy",
+    "name": "spr_block_PondCollision",
+    "path": "sprites/spr_block_PondCollision/spr_block_PondCollision.yy",
   },
   "solid": false,
   "visible": false,

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_bird",
   "spriteId": {
-    "name": "spr_npc_bird",
-    "path": "sprites/spr_npc_bird/spr_npc_bird.yy",
+    "name": "spr_GB_npc",
+    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
   },
   "solid": false,
   "visible": true,

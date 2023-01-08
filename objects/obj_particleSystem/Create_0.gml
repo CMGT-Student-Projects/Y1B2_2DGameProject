@@ -55,16 +55,16 @@ part_type_alpha3(global.particle1, 0, .5, 1);
 /// @DnDHash : 725F1F96
 /// @DnDArgument : "typ" "global.particle1"
 /// @DnDArgument : "minlife" "180"
-/// @DnDArgument : "maxlife" "300"
-part_type_life(global.particle1, 180, 300);
+/// @DnDArgument : "maxlife" "380"
+part_type_life(global.particle1, 180, 380);
 
 /// @DnDAction : YoYo Games.Particles.Part_Type_Speed
 /// @DnDVersion : 1
 /// @DnDHash : 522B42E3
 /// @DnDArgument : "type" "global.particle1"
 /// @DnDArgument : "minspeed" ".08"
-/// @DnDArgument : "maxspeed" ".15"
-part_type_speed(global.particle1, .08, .15, 0, 0);
+/// @DnDArgument : "maxspeed" ".2"
+part_type_speed(global.particle1, .08, .2, 0, 0);
 
 /// @DnDAction : YoYo Games.Particles.Part_Type_Direction
 /// @DnDVersion : 1

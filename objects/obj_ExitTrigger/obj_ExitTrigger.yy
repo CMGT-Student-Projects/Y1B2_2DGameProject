@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ExitTrigger",
   "spriteId": {
-    "name": "spr_yellowblock",
-    "path": "sprites/spr_yellowblock/spr_yellowblock.yy",
+    "name": "spr_block_Transitions",
+    "path": "sprites/spr_block_Transitions/spr_block_Transitions.yy",
   },
   "solid": false,
   "visible": false,

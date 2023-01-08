@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_groundskeeper",
   "spriteId": {
-    "name": "spr_grkeep_idle",
-    "path": "sprites/spr_grkeep_idle/spr_grkeep_idle.yy",
+    "name": "spr_GB_npc",
+    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
   },
   "solid": false,
   "visible": true,

@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_RoomManager",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_block_Control",
+    "path": "sprites/spr_block_Control/spr_block_Control.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

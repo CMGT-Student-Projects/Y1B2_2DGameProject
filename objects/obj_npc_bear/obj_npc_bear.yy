@@ -3,14 +3,14 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_bear",
   "spriteId": {
-    "name": "spr_npc_bear",
-    "path": "sprites/spr_npc_bear/spr_npc_bear.yy",
+    "name": "spr_GB_npc",
+    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "obj_par_npc",
     "path": "objects/obj_par_npc/obj_par_npc.yy",

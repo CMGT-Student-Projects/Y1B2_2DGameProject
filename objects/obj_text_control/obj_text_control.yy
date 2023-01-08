@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_text_control",
   "spriteId": {
-    "name": "spr_blueblock",
-    "path": "sprites/spr_blueblock/spr_blueblock.yy",
+    "name": "spr_block_Control",
+    "path": "sprites/spr_block_Control/spr_block_Control.yy",
   },
   "solid": false,
   "visible": true,

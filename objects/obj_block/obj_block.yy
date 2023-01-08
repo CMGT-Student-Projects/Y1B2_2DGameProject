@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_block",
   "spriteId": {
-    "name": "spr_block_pink_16",
-    "path": "sprites/spr_block_pink_16/spr_block_pink_16.yy",
+    "name": "spr_block_BorderCollision",
+    "path": "sprites/spr_block_BorderCollision/spr_block_BorderCollision.yy",
   },
   "solid": false,
   "visible": false,

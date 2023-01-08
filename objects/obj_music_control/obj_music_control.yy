@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_music_control",
   "spriteId": {
-    "name": "spr_block_blue",
-    "path": "sprites/spr_block_blue/spr_block_blue.yy",
+    "name": "spr_block_Control",
+    "path": "sprites/spr_block_Control/spr_block_Control.yy",
   },
   "solid": false,
   "visible": true,

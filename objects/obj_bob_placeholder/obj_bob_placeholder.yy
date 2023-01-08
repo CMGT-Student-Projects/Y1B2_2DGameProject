@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bob_placeholder",
   "spriteId": {
-    "name": "spr_greenblock",
-    "path": "sprites/spr_greenblock/spr_greenblock.yy",
+    "name": "spr_block_ButtonYes",
+    "path": "sprites/spr_block_ButtonYes/spr_block_ButtonYes.yy",
   },
   "solid": false,
   "visible": true,

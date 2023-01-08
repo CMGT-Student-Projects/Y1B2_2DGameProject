@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_UntidyGhost",
   "spriteId": {
-    "name": "spr_ghost_idle",
-    "path": "sprites/spr_ghost_idle/spr_ghost_idle.yy",
+    "name": "spr_GB_npc",
+    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
   },
   "solid": false,
   "visible": true,

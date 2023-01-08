@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_spookygirl",
   "spriteId": {
-    "name": "spr_goth_idle",
-    "path": "sprites/spr_goth_idle/spr_goth_idle.yy",
+    "name": "spr_GB_npc",
+    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
   },
   "solid": false,
   "visible": true,
