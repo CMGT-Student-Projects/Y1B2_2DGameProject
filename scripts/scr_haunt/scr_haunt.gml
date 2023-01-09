@@ -9,6 +9,7 @@ function scr_hauntITEM(_object){
 				_object.x = 0;
 				_object.y = 0;			
 				_object.item_state = itemStates.isHaunted;
+				_object.persistent = true;
 				obj_player.hauntTargetItem = _object.id;
 				obj_player.hauntTargetSpr = _object.sprite_index;
 				obj_player.haunting = true;
@@ -22,6 +23,7 @@ function scr_hauntNPC(_object){
 		if(_object.npcstate == npcStates.waiting && _object.haunt == true) {
 		if (obj_player.hauntTarget == noone && obj_player.hauntTargetItem == noone) {
 			_object.image_alpha=0;
+			_object.persistent = true;
 			_object.x = 0;
 			_object.y = 0;
 			_object.npcstate=npcStates.isHaunted;
@@ -38,6 +40,7 @@ function scr_hauntNPCoff(_object){
 		if (obj_player.haunting == true && _object.npcstate==npcStates.isHaunted && obj_player.hauntTarget != noone) {
 			_object.x = obj_player.x + 5;
 			_object.y = obj_player.y + 5
+			_object.persistent = false;
 			_object.image_alpha=1;
 			_object.npcstate=npcStates.waiting;
 			obj_player.myState = playerState.idle;
@@ -54,6 +57,7 @@ function scr_hauntITEMoff(_object){
 			_object.y = obj_player.y + 5
 			_object.image_alpha=1;
 			_object.item_state = itemStates.notHaunted;
+			_object.persistent = false;
 			obj_player.myState = playerState.idle;
 			obj_player.hauntTargetItem = noone;
 			obj_player.haunting = false;

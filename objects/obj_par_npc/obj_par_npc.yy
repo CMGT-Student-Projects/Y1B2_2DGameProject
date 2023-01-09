@@ -7,7 +7,7 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -64,6 +64,9 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dxMidEsc_branch","varType":2,"value":"\"Exc _2\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"homeRoom","varType":5,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMRoom",
+      ],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hauntTargetOBJ","varType":5,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
+        "GMObject",
       ],},
   ],
   "overriddenProperties": [],

@@ -7,7 +7,7 @@
     "path": "sprites/spr_block_ButtonYes/spr_block_ButtonYes.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

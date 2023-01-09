@@ -40,72 +40,66 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.r
 }
 
 // Create a quest Dialogue (MID)
-if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.waiting) {
-	if (nearbyNPC.midQuest == true) {
-		// If mid quest has NO branch or FIRST branch
-		if (nearbyNPC.questMid_branch == false) {
-			state = nearbyNPC.dxCount;
-			_name = nearbyNPC.npcname;
-			_dxyes = nearbyNPC.dxMidYes;
-			_dxno = nearbyNPC.dxMidNo;
-			_dxescape = nearbyNPC.dxMidEsc;
-			_questdx = dxQuestMid[state]
-			if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
-				scr_dismissPrompt(npcPrompt,0);
-				iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
-				iii.textToShow = _questdx;
-				iii.nameToShow = _name;
-				iii.dxEscape = _dxescape;
-				nearbyNPC.dxCount += 1;	
+if (nearbyNPC && nearbyNPC.midQuest == true && nearbyNPC.npcstate == npcStates.waiting) {
+	// If mid quest has NO branch or FIRST branch
+	if (nearbyNPC.questMid_branch == false) {
+		state = nearbyNPC.dxCount;
+		_name = nearbyNPC.npcname;
+		_dxyes = nearbyNPC.dxMidYes;
+		_dxno = nearbyNPC.dxMidNo;
+		_dxescape = nearbyNPC.dxMidEsc;
+		_questdx = dxQuestMid[state]
+		if (nearbyNPC.dxCount <= nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
+			scr_dismissPrompt(npcPrompt,0);
+			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
+			iii.textToShow = _questdx;
+			iii.nameToShow = _name;
+			iii.dxEscape = _dxescape;
+			if (nearbyNPC.dxCount < nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
+				nearbyNPC.dxCount += 1;
 			}
-			else {
-				if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)) {
-					scr_dismissPrompt(npcPrompt,0);
-					iii = instance_create_depth(x,y,-10000,obj_ui_dxBegin);
-					iii.textToShow = _questdx;
-					iii.nameToShow = _name;
-					iii.dxYes = _dxyes;
-					iii.dxNo = _dxno;
-					iii.dxEscape = _dxescape;
-					nearbyNPC.dxCount = 1;	
+			if (nearbyNPC.dxCount == nearbyNPC.dxCountTotal_Mid && instance_exists(obj_ui_dxContinue)) {
+				nearbyNPC.npcstate = npcStates.complete;
+			if (nearbyNPC.dxCount != 1) {
+					nearbyNPC.dxCount = 1;
 				}
+				
 			}
 		}
-			// If mid quest has branch and is not first branch
-		if (nearbyNPC.questMid_branch == true) {
-			state = nearbyNPC.dxCount;
-			_name = nearbyNPC.npcname;
-			_dxyes = nearbyNPC.dxMidYes_branch;
-			_dxno = nearbyNPC.dxMidNo_branch;
-			_dxescape = nearbyNPC.dxMidEsc_branch;
-			_questdx = dxQuestMid[state]
-			if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
+	}
+	// If mid quest has branch and is not first branch
+	if (nearbyNPC.questMid_branch == true) {
+		state = nearbyNPC.dxCount;
+		_name = nearbyNPC.npcname;
+		_dxyes = nearbyNPC.dxMidYes_branch;
+		_dxno = nearbyNPC.dxMidNo_branch;
+		_dxescape = nearbyNPC.dxMidEsc_branch;
+		_questdx = dxQuestMid[state]
+		if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
+			scr_dismissPrompt(npcPrompt,0);
+			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
+			iii.textToShow = _questdx;
+			iii.nameToShow = _name;
+			iii.dxEscape = _dxescape;
+			nearbyNPC.dxCount += 1;	
+		}
+		else {
+			if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)) {
 				scr_dismissPrompt(npcPrompt,0);
-				iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
+				iii = instance_create_depth(x,y,-10000,obj_ui_dxBegin);
 				iii.textToShow = _questdx;
 				iii.nameToShow = _name;
+				iii.dxYes = _dxyes;
+				iii.dxNo = _dxno;
 				iii.dxEscape = _dxescape;
-				nearbyNPC.dxCount += 1;	
+				nearbyNPC.dxCount = 1;	
 			}
-			else {
-				if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)) {
-					scr_dismissPrompt(npcPrompt,0);
-					iii = instance_create_depth(x,y,-10000,obj_ui_dxBegin);
-					iii.textToShow = _questdx;
-					iii.nameToShow = _name;
-					iii.dxYes = _dxyes;
-					iii.dxNo = _dxno;
-					iii.dxEscape = _dxescape;
-					nearbyNPC.dxCount = 1;	
-				}
-			}
+		}
 					
 				
-		}
-	}	
+	}
+	
 }
-
-
 
 // Create Quest Dialogue: NPC Quest Completed 
 if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
@@ -181,18 +175,5 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == false) {
 		}
 	}
 #endregion
-/*
-// Interacting as haunted object
-if (haunting==true) {
-	// Create Diaglogue prompt for QUESTS 
-	if !instance_exists(obj_ui_dxContinue && hauntTargetItem != noone){
-			_dxComplete = hauntTargetItem.dxComplete;
-			_dxescape = hauntTargetItem.dxEscape;
-			_name = hauntTargetItem.itemName;
-			_questdx = hauntTargetItem.dxQuestText;
-			// haunting at the pond
-		if (nearbyWater && hauntTargetItem.q_objective == ) {	
-						
-		}
-	}
-}
+
+
