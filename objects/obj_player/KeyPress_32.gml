@@ -19,7 +19,7 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.r
 	_questdx = dxQuest[state]
 		if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal && !instance_exists(obj_ui_dxBegin)){
 			scr_dismissPrompt(npcPrompt,0);
-			iii = instance_create_depth(view_get_wport(0)/2,view_get_hport(0)/2,-10000,obj_ui_dxContinue);
+			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
 			iii.textToShow = _questdx;
 			iii.nameToShow = _name;
 			iii.dxEscape = _dxescape;

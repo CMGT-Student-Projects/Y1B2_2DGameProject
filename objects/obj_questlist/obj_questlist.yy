@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Control",
-    "path": "folders/Objects/Control.yy",
+    "name": "GUI",
+    "path": "folders/Objects/GB_UI/GUI.yy",
   },
 }
