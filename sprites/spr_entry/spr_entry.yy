@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Ghosting_2022-19-19v2",
-    "path": "Ghosting_2022-19-19v2.yyp",
+    "name": "Control",
+    "path": "folders/Sprites/Blocks/Control.yy",
   },
 }

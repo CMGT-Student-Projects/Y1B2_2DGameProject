@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GB_UI",
-    "path": "folders/Objects/GB_UI.yy",
+    "name": "Interactions",
+    "path": "folders/Objects/GB_UI/Interactions.yy",
   },
 }

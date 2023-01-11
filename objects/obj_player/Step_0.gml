@@ -85,7 +85,7 @@ depth =-y;
 
 	if nearbyNPC {
 // Play greeting sound
-	if (hasGreeted == false && nearbyNPC.npcstate!=npcStates.isHaunted) {
+	if (hasGreeted == false && nearbyNPC.npcQstate!=npcQStates.isHaunted && nearbyNPC.npcstate != npcStates.failed) {
 	if !(audio_is_playing(snd_greeting01)) {
 		audio_play_sound(snd_greeting01,1,0);
 		hasGreeted = true;
@@ -136,7 +136,8 @@ if(nearbyNPC){
 	dxQuest[2] = nearbyNPC.questBegin02;
 	dxQuest[3] = nearbyNPC.questBegin03;
 	dxQuest[4] = nearbyNPC.questBegin04;
-	//NPC dialogue MID [npc quest count][count#]
+	
+	#region //NPC dialogue MID [npc quest count][count#]
 	dxQuestMid[1] = nearbyNPC.questMid01;
 		if variable_instance_exists(nearbyNPC.id, "questMid02"){
 			dxQuestMid[2] = nearbyNPC.questMid02;
@@ -145,39 +146,67 @@ if(nearbyNPC){
 			dxQuestMid[3] = nearbyNPC.questMid03;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid04"){
-			dxQuestMid[2] = nearbyNPC.questMid04;
+			dxQuestMid[4] = nearbyNPC.questMid04;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid05"){
-			dxQuestMid[3] = nearbyNPC.questMid05;
+			dxQuestMid[5] = nearbyNPC.questMid05;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid06"){
-			dxQuestMid[2] = nearbyNPC.questMid06;
+			dxQuestMid[6] = nearbyNPC.questMid06;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid07"){
-			dxQuestMid[3] = nearbyNPC.questMid07;
+			dxQuestMid[7] = nearbyNPC.questMid07;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid08"){
-			dxQuestMid[2] = nearbyNPC.questMid08;
+			dxQuestMid[8] = nearbyNPC.questMid08;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid09"){
-			dxQuestMid[3] = nearbyNPC.questMid09;
+			dxQuestMid[9] = nearbyNPC.questMid09;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid10"){
-			dxQuestMid[2] = nearbyNPC.questMid10;
+			dxQuestMid[10] = nearbyNPC.questMid10;
 		}
 		if variable_instance_exists(nearbyNPC.id, "questMid11"){
-			dxQuestMid[3] = nearbyNPC.questMid11;
+			dxQuestMid[11] = nearbyNPC.questMid11;
 		}
-		if variable_instance_exists(nearbyNPC.id, "questMid04"){
-			dxQuestMid[2] = nearbyNPC.questMid04;
+
+		#endregion
+		#region //NPC dialogue MID BRANCH [npc quest count][count#]
+	dxQuestMid_branch[1] = nearbyNPC.questMid_branch01;
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch02"){
+			dxQuestMid_branch[2] = nearbyNPC.questMid_branch02;
 		}
-		if variable_instance_exists(nearbyNPC.id, "questMid05"){
-			dxQuestMid[3] = nearbyNPC.questMid05;
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch03"){
+			dxQuestMid_branch[3] = nearbyNPC.questMid_branch03;
 		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch04"){
+			dxQuestMid_branch[4] = nearbyNPC.questMid_branch04;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch05"){
+			dxQuestMid_branch[5] = nearbyNPC.questMid_branch05;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch06"){
+			dxQuestMid_branch[6] = nearbyNPC.questMid_branch06;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch07"){
+			dxQuestMid_branch[7] = nearbyNPC.questMid_branch07;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch08"){
+			dxQuestMid_branch[8] = nearbyNPC.questMid_branch08;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch09"){
+			dxQuestMid_branch[9] = nearbyNPC.questMid_branch09;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch10"){
+			dxQuestMid_branch[10] = nearbyNPC.questMid_branch10;
+		}
+		if variable_instance_exists(nearbyNPC.id, "questMid_branch11"){
+			dxQuestMid_branch[11] = nearbyNPC.questMid_branch11;
+		}
+
+		#endregion
 
 }
 #endregion
 
-
-
-
+show_debug_message(global.zoneTime)

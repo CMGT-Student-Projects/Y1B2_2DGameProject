@@ -19,7 +19,7 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.r
 	_questdx = dxQuest[state]
 		if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal && !instance_exists(obj_ui_dxBegin)){
 			scr_dismissPrompt(npcPrompt,0);
-			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
+			iii = instance_create_depth(view_get_wport(0)/2,view_get_hport(0)/2,-10000,obj_ui_dxContinue);
 			iii.textToShow = _questdx;
 			iii.nameToShow = _name;
 			iii.dxEscape = _dxescape;
@@ -42,13 +42,13 @@ if (nearbyNPC && nearbyNPC.npcQuest == true && nearbyNPC.npcstate == npcStates.r
 // Create a quest Dialogue (MID)
 if (nearbyNPC && nearbyNPC.midQuest == true && nearbyNPC.npcstate == npcStates.waiting) {
 	// If mid quest has NO branch or FIRST branch
+	state = nearbyNPC.dxCount;
+	_name = nearbyNPC.npcname;
 	if (nearbyNPC.questMid_branch == false) {
-		state = nearbyNPC.dxCount;
-		_name = nearbyNPC.npcname;
 		_dxyes = nearbyNPC.dxMidYes;
 		_dxno = nearbyNPC.dxMidNo;
 		_dxescape = nearbyNPC.dxMidEsc;
-		_questdx = dxQuestMid[state]
+		_questdx = dxQuestMid[state];
 		if (nearbyNPC.dxCount <= nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
 			scr_dismissPrompt(npcPrompt,0);
 			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
@@ -71,32 +71,27 @@ if (nearbyNPC && nearbyNPC.midQuest == true && nearbyNPC.npcstate == npcStates.w
 	if (nearbyNPC.questMid_branch == true) {
 		state = nearbyNPC.dxCount;
 		_name = nearbyNPC.npcname;
-		_dxyes = nearbyNPC.dxMidYes_branch;
-		_dxno = nearbyNPC.dxMidNo_branch;
-		_dxescape = nearbyNPC.dxMidEsc_branch;
-		_questdx = dxQuestMid[state]
-		if (nearbyNPC.dxCount != nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
+		_dxyes = nearbyNPC.dxMidYes;
+		_dxno = nearbyNPC.dxMidNo;
+		_dxescape = nearbyNPC.dxMidEsc;
+		_questdx = questMid_branch[state];
+		if (nearbyNPC.dxCount <= nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
 			scr_dismissPrompt(npcPrompt,0);
 			iii = instance_create_depth(x,y,-10000,obj_ui_dxContinue);
 			iii.textToShow = _questdx;
 			iii.nameToShow = _name;
 			iii.dxEscape = _dxescape;
-			nearbyNPC.dxCount += 1;	
-		}
-		else {
-			if (nearbyNPC.dxCount==nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)) {
-				scr_dismissPrompt(npcPrompt,0);
-				iii = instance_create_depth(x,y,-10000,obj_ui_dxBegin);
-				iii.textToShow = _questdx;
-				iii.nameToShow = _name;
-				iii.dxYes = _dxyes;
-				iii.dxNo = _dxno;
-				iii.dxEscape = _dxescape;
-				nearbyNPC.dxCount = 1;	
+			if (nearbyNPC.dxCount < nearbyNPC.dxCountTotal_Mid && !instance_exists(obj_ui_dxBegin)){
+				nearbyNPC.dxCount += 1;
+			}
+			if (nearbyNPC.dxCount == nearbyNPC.dxCountTotal_Mid && instance_exists(obj_ui_dxContinue)) {
+				nearbyNPC.npcstate = npcStates.complete;
+			if (nearbyNPC.dxCount != 1) {
+					nearbyNPC.dxCount = 1;
+				}
+				
 			}
 		}
-					
-				
 	}
 	
 }
@@ -167,13 +162,20 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 #endregion
 
 #region // Create a textbox if NPC is nearby
+
 if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == false) {
 	_text = nearbyNPC.myText;
 	if (!instance_exists(obj_textbox)) {
-		iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-175,-10000,obj_textbox);
-		iii.textToShow = _text;
+		if (nearbyNPC.npcstate != npcStates.failed) {
+			iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-175,-10000,obj_textbox);
+			iii.textToShow = _text;
+		}
+		if (nearbyNPC.npcstate == npcStates.failed) {
+			iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-175,-10000,obj_textbox);
+			iii.textToShow = nearbyNPC.failText;
 		}
 	}
+}
 #endregion
 
 

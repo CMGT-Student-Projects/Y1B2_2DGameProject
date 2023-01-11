@@ -1,1 +1,1 @@
-global.zoneTime = +1;
+global.zoneTime += 1;

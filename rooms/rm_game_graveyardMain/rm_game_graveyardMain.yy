@@ -41,11 +41,12 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_378CA72F","properties":[],"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":1248.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4173D40C","properties":[],"isDnd":false,"objectId":{"name":"obj_music_control","path":"objects/obj_music_control/obj_music_control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5151515,"scaleY":0.5151515,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-160.0,"y":128.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"Control_Music","properties":[],"isDnd":false,"objectId":{"name":"obj_music_control","path":"objects/obj_music_control/obj_music_control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5151515,"scaleY":0.5151515,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-160.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79A319E4","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1952.0,"y":768.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2544D532","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_fish","path":"objects/obj_npc_fish/obj_npc_fish.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2400.0,"y":736.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E09FA62","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_groundskeeper","path":"objects/obj_npc_groundskeeper/obj_npc_groundskeeper.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1440.0,"y":768.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D1D2942","properties":[],"isDnd":false,"objectId":{"name":"obj_npc_UntidyGhost","path":"objects/obj_npc_UntidyGhost/obj_npc_UntidyGhost.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":1792.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_56F84320","properties":[],"isDnd":false,"objectId":{"name":"obj_questlist","path":"objects/obj_questlist/obj_questlist.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-160.0,"y":192.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tileset_Graveyard","tilesetId":{"name":"ts_gravemain","path":"tilesets/ts_gravemain/ts_gravemain.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":63,"SerialiseHeight":40,"TileCompressedData":[
 -22,-2147483648,-7,0,3,73,74,75,-9,0,6,73,74,75,73,74,75,-3,0,13,73,74,75,73,74,75,73,74,75,73,74,75,0,-22,-2147483648,-4,0,37,63,64,65,63,64,65,63,64,65,63,64,65,63,64,65,63,64,65,63,64,65,63,64,65,63,
@@ -77,7 +78,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_4173D40C","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
+    {"name":"Control_Music","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
     {"name":"inst_79A319E4","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
     {"name":"inst_2544D532","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
     {"name":"inst_2E09FA62","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
@@ -96,6 +97,7 @@
     {"name":"rm_Main_arrow_E","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
     {"name":"inst_56B57856","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
     {"name":"rm_Main_arrow_W","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
+    {"name":"inst_56F84320","path":"rooms/rm_game_graveyardMain/rm_game_graveyardMain.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

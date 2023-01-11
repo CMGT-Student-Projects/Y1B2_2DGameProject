@@ -1,2 +1,2 @@
 npcstate = npcStates.ready;
-// Particle System: If NPC Can be Haunted
+npcQstate = npcQStates.notHaunted;

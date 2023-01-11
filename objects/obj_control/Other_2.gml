@@ -5,14 +5,23 @@ global.gameOver = false;
 global.gameStart = false;
 global.zoneTime = 0;
 
+global.TrashCount = 4;
+global.WeedCount = 4;
+global.StickCount = 0;
+
+
 enum npcStates {
 	idle,
-	isHaunted,
 	ready,
 	waiting,
 	complete,
 	wander,
-	decline
+	decline,
+	failed
+}
+enum npcQStates {
+	isHaunted,
+	notHaunted
 }
 
 enum itemStates {

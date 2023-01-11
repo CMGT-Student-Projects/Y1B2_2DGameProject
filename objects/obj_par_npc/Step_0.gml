@@ -31,9 +31,16 @@ if (image_speed > 0) {
 }*/
 #endregion
 
-if (haunt == true && npcstate = npcStates.waiting) {
+if (haunt == true) {
 	var _x = irandom_range(x - sprite_width*.5,x + sprite_width*.5);
 	var _ybase = irandom_range(y - sprite_height*.5,y - sprite_height*.75)
 	part_particles_create(global.P_system, _x, _ybase, global.particle1, 1);
 }
 
+if (npcstate = npcStates.waiting && timeQuest == true) {
+	if (global.zoneTime - timeStart > timeLimit) {
+		npcstate = npcStates.failed;
+	}
+}
+
+	

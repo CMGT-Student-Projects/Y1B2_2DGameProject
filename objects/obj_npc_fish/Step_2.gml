@@ -1,6 +1,10 @@
 var _x;
 var _y;
 
+if (npcstate == npcStates.waiting) {
+	haunt = true;
+	}
+
 // Quest Complete: Good Ending
 
 
@@ -19,7 +23,14 @@ if (npcstate == npcStates.idle) {
 if (room == rm_game_Forest) {
 	if (obj_npc_bird.npcstate == npcStates.complete && obj_npc_bird.questMid_branch == false) {
 		sprite_index = spr_npc_fishbowl_bird;
-		waitingText = "The fish won't last long without water. Hurry!"
+		waitingText = "The fish won't last long without water. Hurry!";
+		timeStart = global.zoneTime;
+		timeLimit = 2;
 	}
 }
 
+if npcstate == npcStates.failed {
+	sprite_index = spr_GB_npc;
+	npcname = "Mr. Floaty";
+	npcQuest = false;
+}

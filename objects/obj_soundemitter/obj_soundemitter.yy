@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_soundemitter",
   "spriteId": {
-    "name": "spr_block_PondCollision",
-    "path": "sprites/spr_block_PondCollision/spr_block_PondCollision.yy",
+    "name": "spr_block_Emitter",
+    "path": "sprites/spr_block_Emitter/spr_block_Emitter.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"useSound","path":"objects/obj_par_environment/obj_par_environment.yy",},"objectId":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"value":"mus_RetroCassette",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Control",
+    "path": "folders/Objects/Control.yy",
   },
 }
