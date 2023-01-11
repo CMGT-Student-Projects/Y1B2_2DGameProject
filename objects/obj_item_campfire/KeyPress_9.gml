@@ -15,14 +15,14 @@ if (global.playerControl==true && obj_player.haunting == false && collision_circ
 			alarm[0] = 5;
 		}
 	}
-	if (fuelCount == 1) {
-		if instance_exists(obj_item_torch) {
+	if (fuelCount == 0) {
+		if instance_exists(obj_item_torch) && obj_player.haunting == false && !collision_circle(x,y,250,obj_item_torch,false,true) {
 			if obj_item_torch.itemName == "stick on fire" {
 			iv = instance_create_layer(x,y-175,"Instances",obj_textbox);
 			iv.textToShow = "I already have a stick on fire.";
 			}
 			if obj_item_torch.itemName == "Stick" {
-			haunt = false;
+
 			ii = instance_create_layer(x,y-175,"Instances",obj_textbox);
 			ii.textToShow = "I should bring the stick back first.";
 			}

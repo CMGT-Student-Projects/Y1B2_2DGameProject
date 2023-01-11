@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_tree_forest",
+  "name": "obj_grass_pond",
   "spriteId": {
-    "name": "spr_tree_pond02",
-    "path": "sprites/spr_tree_pond02/spr_tree_pond02.yy",
+    "name": "spr_env_Pond_Grass01",
+    "path": "sprites/spr_env_Pond_Grass01/spr_env_Pond_Grass01.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_par_environment",
-    "path": "objects/obj_par_environment/obj_par_environment.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +24,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "trees",
-    "path": "folders/Objects/Final_Environment/trees.yy",
+    "name": "grasses",
+    "path": "folders/Objects/Final_Environment/grasses.yy",
   },
 }

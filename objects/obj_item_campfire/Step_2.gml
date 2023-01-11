@@ -20,3 +20,9 @@ if (sprite_index == spr_GB_Item && itemName == "Lively Campfire") {
 if obj_player.sprite_index == obj_item_torch {
 	
 }
+if fuelCount ==1 {
+			haunt = true;
+}
+if fuelCount = 0 {
+			haunt = false;
+}
