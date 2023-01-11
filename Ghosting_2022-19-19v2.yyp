@@ -36,7 +36,7 @@
     {"id":{"name":"obj_tut_wasd","path":"objects/obj_tut_wasd/obj_tut_wasd.yy",},"order":9,},
     {"id":{"name":"obj_mus_graveyard","path":"objects/obj_mus_graveyard/obj_mus_graveyard.yy",},"order":3,},
     {"id":{"name":"spr_Fade_blacksq","path":"sprites/spr_Fade_blacksq/spr_Fade_blacksq.yy",},"order":7,},
-    {"id":{"name":"obj_bush_forest","path":"objects/obj_bush_forest/obj_bush_forest.yy",},"order":0,},
+    {"id":{"name":"obj_bush_forest","path":"objects/obj_bush_forest/obj_bush_forest.yy",},"order":5,},
     {"id":{"name":"spr_BG_title","path":"sprites/spr_BG_title/spr_BG_title.yy",},"order":0,},
     {"id":{"name":"spr_env_Forest_Grass02","path":"sprites/spr_env_Forest_Grass02/spr_env_Forest_Grass02.yy",},"order":16,},
     {"id":{"name":"ts_gravemain","path":"tilesets/ts_gravemain/ts_gravemain.yy",},"order":1,},
@@ -238,6 +238,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.11.1.56",
+    "IDEVersion": "2022.9.1.51",
   },
 }
