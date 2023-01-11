@@ -13,6 +13,7 @@ function scr_hauntITEM(_object){
 				obj_player.hauntTargetItem = _object.id;
 				obj_player.hauntTargetSpr = _object.sprite_index;
 				obj_player.haunting = true;
+				obj_player.image_alpha = 1;
 			}
 		}
 	}
@@ -30,6 +31,7 @@ function scr_hauntNPC(_object){
 			obj_player.hauntTarget = _object.id;
 			obj_player.hauntTargetSpr = _object.sprite_index;
 			obj_player.haunting = true;
+			obj_player.image_alpha = 1;
 		}
 	}
 }
@@ -47,6 +49,7 @@ function scr_hauntNPCoff(_object){
 			obj_player.hauntTarget = noone;
 			obj_player.haunting = false;
 			_object.homeRoom = room;
+			obj_player.image_alpha = .7;
 			}
 		}
 
@@ -62,5 +65,6 @@ function scr_hauntITEMoff(_object){
 			obj_player.hauntTargetItem = noone;
 			obj_player.haunting = false;
 			_object.homeRoom = room;
+			obj_player.image_alpha = .7;
 		}
 	}

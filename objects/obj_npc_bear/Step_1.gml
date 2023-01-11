@@ -7,4 +7,5 @@ if (obj_player.sprite_index == spr_GB_Item || obj_player.nearbyItem == obj_item_
 	}
 if npcstate = npcStates.idle {
 	global.Q_honeyPlease = 3
+	alarm[1] = 80;
 }

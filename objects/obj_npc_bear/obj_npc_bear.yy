@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_bear",
   "spriteId": {
-    "name": "spr_GB_npc",
-    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
+    "name": "spr_npc_bear_ready",
+    "path": "sprites/spr_npc_bear_ready/spr_npc_bear_ready.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,6 +30,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
