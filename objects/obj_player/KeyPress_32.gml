@@ -118,7 +118,7 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 if (nearbyItem && global.playerControl == true) {
 	if(nearbyItem.item_state == itemStates.notHaunted) {
 	
-		if (!instance_exists(obj_textbox)) {
+		if (!instance_exists(obj_textbox)) && !nearbyItem {
 			_text = nearbyItem.itemText;
 		
 			iii = instance_create_depth(nearbyItem.x,nearbyItem.y-300,-10000,obj_textbox);

@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Final_Environment",
-    "path": "folders/Objects/Final_Environment.yy",
+    "name": "trees",
+    "path": "folders/Objects/Final_Environment/trees.yy",
   },
 }
