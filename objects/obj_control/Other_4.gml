@@ -9,3 +9,4 @@ audio_play_sound(mus_title,1,1);
 if (room!=rm_game_Title) {
 	global.playerControl = true;
 }
+
