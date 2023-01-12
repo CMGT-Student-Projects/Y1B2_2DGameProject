@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_item_beehive",
   "spriteId": {
-    "name": "spr_GB_Item",
-    "path": "sprites/spr_GB_Item/spr_GB_Item.yy",
+    "name": "spr_item_Beehive",
+    "path": "sprites/spr_item_Beehive/spr_item_Beehive.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,6 +33,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"Shake","varType":3,"value":"False","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
@@ -45,9 +46,10 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"itemText","path":"objects/obj_par_item/obj_par_item.yy",},"objectId":{"name":"obj_par_item","path":"objects/obj_par_item/obj_par_item.yy",},"value":"\"bzzz.. bzz...\\n\\n bzz bzzz bzzzzz bzz bzz\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"haunt","path":"objects/obj_par_item/obj_par_item.yy",},"objectId":{"name":"obj_par_item","path":"objects/obj_par_item/obj_par_item.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"homeRoom","path":"objects/obj_par_item/obj_par_item.yy",},"objectId":{"name":"obj_par_item","path":"objects/obj_par_item/obj_par_item.yy",},"value":"rm_game_Pond",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dxQuestText","path":"objects/obj_par_item/obj_par_item.yy",},"objectId":{"name":"obj_par_item","path":"objects/obj_par_item/obj_par_item.yy",},"value":"\"You carefully hover the torch around the beehive. The angry buzzing grows quiet, and harvesting the honey will not disturb the bees.\"",},
   ],
   "parent": {
-    "name": "GB_Items",
-    "path": "folders/Objects/GB_Items.yy",
+    "name": "Final Items",
+    "path": "folders/Objects/Final Items.yy",
   },
 }

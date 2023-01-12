@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_port_fish",
-  "spriteId": {
-    "name": "spr_ui_npc_fish",
-    "path": "sprites/spr_ui_npc_fish/spr_ui_npc_fish.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

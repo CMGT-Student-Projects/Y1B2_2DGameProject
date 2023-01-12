@@ -1,6 +1,4 @@
-/*beeShake =false;
-global.playerControl = true;
-*/
+
 
 
 if (shakecount !=6) {

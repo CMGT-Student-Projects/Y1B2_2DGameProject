@@ -35,4 +35,3 @@ enum itemQStates {
 	 Complete,
  }
  
-uest = 0;

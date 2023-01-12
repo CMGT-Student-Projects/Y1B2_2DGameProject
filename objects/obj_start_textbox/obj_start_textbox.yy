@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_start_textbox",
   "spriteId": {
-    "name": "spr_ui_title_dxbox",
-    "path": "sprites/spr_ui_title_dxbox/spr_ui_title_dxbox.yy",
+    "name": "spr_title_popup",
+    "path": "sprites/spr_title_popup/spr_title_popup.yy",
   },
   "solid": false,
   "visible": true,

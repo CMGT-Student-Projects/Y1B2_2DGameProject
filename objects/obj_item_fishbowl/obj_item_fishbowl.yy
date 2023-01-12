@@ -42,7 +42,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"quest","path":"objects/obj_par_item/obj_par_item.yy",},"objectId":{"name":"obj_par_item","path":"objects/obj_par_item/obj_par_item.yy",},"value":"False",},
   ],
   "parent": {
-    "name": "GB_Items",
-    "path": "folders/Objects/GB_Items.yy",
+    "name": "Final Items",
+    "path": "folders/Objects/Final Items.yy",
   },
 }

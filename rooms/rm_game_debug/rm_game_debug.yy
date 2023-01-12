@@ -17,7 +17,6 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A493C41","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":480.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C6DDB1D","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetRoom","path":"objects/obj_ExitTrigger/obj_ExitTrigger.yy",},"objectId":{"name":"obj_ExitTrigger","path":"objects/obj_ExitTrigger/obj_ExitTrigger.yy",},"value":"rm_game_graveyardMain",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetInstance","path":"objects/obj_ExitTrigger/obj_ExitTrigger.yy",},"objectId":{"name":"obj_ExitTrigger","path":"objects/obj_ExitTrigger/obj_ExitTrigger.yy",},"value":"rm_Main_arrow_E",},
@@ -48,7 +47,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_6A493C41","path":"rooms/rm_game_debug/rm_game_debug.yy",},
     {"name":"inst_3C7060AB","path":"rooms/rm_game_debug/rm_game_debug.yy",},
     {"name":"inst_5E7CEBE9","path":"rooms/rm_game_debug/rm_game_debug.yy",},
     {"name":"inst_30B1A952","path":"rooms/rm_game_debug/rm_game_debug.yy",},
