@@ -241,7 +241,7 @@ Updated upstream
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18770122","properties":[],"isDnd":false,"objectId":{"name":"obj_mus_pond","path":"objects/obj_mus_pond/obj_mus_pond.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0963688,"scaleY":2.484375,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1705.0837,"y":79.5,},
 Updated upstream
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-=======
+
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21B61227","properties":[],"isDnd":false,"objectId":{"name":"obj_block_pond","path":"objects/obj_block_pond/obj_block_pond.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1955.0,"y":259.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3C2C1870","properties":[],"isDnd":false,"objectId":{"name":"obj_block_pond","path":"objects/obj_block_pond/obj_block_pond.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":14.625,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2067.0,"y":289.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6AC6B917","properties":[],"isDnd":false,"objectId":{"name":"obj_block_pond","path":"objects/obj_block_pond/obj_block_pond.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2078.0,"y":328.0,},
@@ -491,6 +491,7 @@ Stashed changes
  Updated upstream
     {"name":"inst_beehive_shadow","path":"rooms/rm_game_Pond/rm_game_Pond.yy",},
     {"name":"inst_19A0B977","path":"rooms/rm_game_Pond/rm_game_Pond.yy",},
+HEAD
 
     {"name":"inst_21B61227","path":"rooms/rm_game_Pond/rm_game_Pond.yy",},
     {"name":"inst_3C2C1870","path":"rooms/rm_game_Pond/rm_game_Pond.yy",},
@@ -508,6 +509,8 @@ Stashed changes
     {"name":"inst_158C91EE","path":"rooms/rm_game_Pond/rm_game_Pond.yy",},
     {"name":"inst_6CF430FC","path":"rooms/rm_game_Pond/rm_game_Pond.yy",},
  Stashed changes
+
+ parent of 1a29865 (update popup quest)
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
