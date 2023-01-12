@@ -4,7 +4,6 @@ var _exit = instance_place(x, y, obj_ExitTrigger);
 // Enter room when trigger area is left
 if (!enteredRoom && _exit == noone) {
 	enteredRoom = true;
-	
 }
 
 // Exit room
@@ -13,3 +12,5 @@ if (enteredRoom && _exit != noone) {
 	obj_RoomManager.targetInstance = _exit.targetInstance;
 	enteredRoom = false;
 }
+
+

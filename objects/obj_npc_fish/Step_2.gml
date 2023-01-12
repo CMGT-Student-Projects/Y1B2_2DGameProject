@@ -26,7 +26,6 @@ if (room == rm_game_Forest) {
 		waitingText = "The fish won't last long without water. Hurry!";
 		timeStart = global.zoneTime;
 		timeLimit = 2;
-		obj_ui_TimePop.fish_time = global.zoneTime - timeLimit;
 	}
 }
 

@@ -208,3 +208,5 @@ if(nearbyNPC){
 
 }
 #endregion
+
+show_debug_message(global.zoneTime)

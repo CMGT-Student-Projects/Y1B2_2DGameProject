@@ -2,6 +2,6 @@
 image_xscale *= 500;
 image_yscale *= 500;
 
-fadeSpeed = .002;
+fadeSpeed = .005;
 
 image_alpha = 1;
