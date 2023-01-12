@@ -18,3 +18,4 @@ global.Q_chattyGhost = 0;
 global.Q_cleanup = 0;
 global.Q_birdQ = 0;
 
+

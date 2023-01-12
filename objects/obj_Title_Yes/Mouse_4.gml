@@ -20,3 +20,4 @@ if (room == rm_game_Title && instance_exists(obj_start_textbox) && instance_posi
 		room_goto(rm_game_graveyardMain);
 	}
 }
+
