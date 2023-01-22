@@ -1,6 +1,7 @@
-if obj_player.sprite_index == spr_GB_Item {
+if obj_player.sprite_index == spr_Stick_Fire_Upright {
 	if haunt = true && !instance_exists(obj_ui_dxClose){
 		if (global.playerControl==true && collision_circle(self.x,self.y,obj_player.lookRange,obj_player,false,true)) {
+			
 			haunt = false;
 			var _questdx = dxQuestText;
 			var _name = itemName;
@@ -21,6 +22,7 @@ if obj_player.sprite_index == spr_GB_Item {
 			starty = y;
 			alarm[0] = 5;
 			smoke = true;
+			global.Q_honeyPlease = 2;
 		}
 	}
 }

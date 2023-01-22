@@ -38,7 +38,7 @@ if instance_exists(obj_item_torch) && !collision_circle(self.x,self.y,obj_player
 	if (collision_circle(self.x,self.y,obj_player.lookRange,obj_player,false,true) && obj_player.haunting==false) {
 		if (!instance_exists(obj_textbox) && itemName == "Lively Campfire") {
 			if obj_item_torch.itemName == "stick on fire" {
-				iii = instance_create_depth(x,y-175,-10000,obj_textbox);
+				iii = instance_create_depth(x,y-175,-99999999,obj_textbox);
 				iii.textToShow = "I already have a stick on fire.";
 			}
 

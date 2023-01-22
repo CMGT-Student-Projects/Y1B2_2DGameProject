@@ -1,4 +1,9 @@
-
+// Give the bird water
+if collision_circle(obj_player.x,obj_player.y,200,obj_npc_bird,false,true) && instance_exists(obj_ui_dxContinue) {
+	if	(obj_player.sprite_index = spr_npc_fishbowl_water && obj_npc_bird.npcstate == npcStates.complete) {
+		alarm[1]=30;
+	}
+}
 
 
 // Interacting as haunted object

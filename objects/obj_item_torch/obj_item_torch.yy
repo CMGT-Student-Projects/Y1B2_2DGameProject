@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_item_torch",
   "spriteId": {
-    "name": "spr_GB_Item",
-    "path": "sprites/spr_GB_Item/spr_GB_Item.yy",
+    "name": "spr_Stick_Fire",
+    "path": "sprites/spr_Stick_Fire/spr_Stick_Fire.yy",
   },
   "solid": false,
   "visible": true,
@@ -44,7 +44,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"timeQuest","path":"objects/obj_par_item/obj_par_item.yy",},"objectId":{"name":"obj_par_item","path":"objects/obj_par_item/obj_par_item.yy",},"value":"True",},
   ],
   "parent": {
-    "name": "GB_Items",
-    "path": "folders/Objects/GB_Items.yy",
+    "name": "Final Items",
+    "path": "folders/Objects/Final Items.yy",
   },
 }

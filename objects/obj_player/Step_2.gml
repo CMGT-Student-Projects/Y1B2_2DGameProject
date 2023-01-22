@@ -3,13 +3,20 @@ var _exit = instance_place(x, y, obj_ExitTrigger);
 
 // Enter room when trigger area is left
 if (!enteredRoom && _exit == noone) {
-	enteredRoom = true;
-	
+	enteredRoom = true;	
 }
+if _exit != noone  {
+global.trs_TargetRoom = _exit.targetRoom;
+obj_RoomManager.targetInstance = _exit.targetInstance;
+}
+		
 
 // Exit room
 if (enteredRoom && _exit != noone) {
-	room_goto(_exit.targetRoom);
-	obj_RoomManager.targetInstance = _exit.targetInstance;
+	scr_PlaceTransition(seq_tr_fadeout);
+	global.playerControl = false;
+	
 	enteredRoom = false;
+	global.playerControl = true;
 }
+

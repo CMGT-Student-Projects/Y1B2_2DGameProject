@@ -12,7 +12,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 63,
-  "bbox_top": 43,
+  "bbox_top": 48,
   "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Environment",
-    "path": "folders/Sprites/Environment.yy",
+    "name": "Graves",
+    "path": "folders/Sprites/Environment/Graves.yy",
   },
 }

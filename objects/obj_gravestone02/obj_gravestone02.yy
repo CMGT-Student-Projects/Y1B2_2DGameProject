@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Final_Environment",
-    "path": "folders/Objects/Final_Environment.yy",
+    "name": "Graves",
+    "path": "folders/Objects/Final_Environment/Graves.yy",
   },
 }

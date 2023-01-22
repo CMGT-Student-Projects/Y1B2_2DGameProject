@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Control",
-    "path": "folders/Objects/Control.yy",
+    "name": "spawns",
+    "path": "folders/Objects/Control/spawns.yy",
   },
 }

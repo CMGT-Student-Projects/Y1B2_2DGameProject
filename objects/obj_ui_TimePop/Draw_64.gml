@@ -1,6 +1,6 @@
 if drawBox = true {
 	// Draw textbox
-	draw_sprite(spr_ui_TimePop,0,960,540);
+	draw_sprite_ext(spr_ui_TimePop,0,960,540,1,1,0,c_white,image_alpha);
 	// Draw Text
 	draw_set_font(fnt_textbox);
 	draw_set_halign(fa_center);
@@ -25,9 +25,5 @@ if drawBox = true {
 		draw_text_ext_color(800, 600, bird_name,lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
 		draw_text_ext_color(1020, 600, bird_time,lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
 	}
-	// Draw "Button" instructions
-	draw_set_font(fnt_Q_track);
-	draw_set_halign(fa_center);
-	draw_text_ext_color(960,710,"Space to Continue",lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
 }
 

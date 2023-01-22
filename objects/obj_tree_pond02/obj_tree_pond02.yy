@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_tree_pond02",
   "spriteId": {
-    "name": "spr_tree_green",
-    "path": "sprites/spr_tree_green/spr_tree_green.yy",
+    "name": "spr_tree_pond02",
+    "path": "sprites/spr_tree_pond02/spr_tree_pond02.yy",
   },
   "solid": false,
   "visible": true,

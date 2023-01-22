@@ -1,3 +1,5 @@
+// If item is Greybox, display item name.
+
 draw_self();
 if sprite_index = spr_GB_Item {
 	draw_set_font(fnt_textbox);

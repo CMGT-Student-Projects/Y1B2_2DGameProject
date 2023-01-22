@@ -15,6 +15,10 @@ if (npcstate == npcStates.idle) {
 	_y = obj_npc_fish.y;
 	instance_destroy();
 	instance_create_layer(_x,_y,"Instances",obj_item_fishbowl);
+	global.Q_freeFish = 3;
+	obj_ui_done.last_quest = global.Q_freeFish_Name;
+	obj_achievement.last_achiev = "steam_fish_Q3"
+	obj_achievement.steam_fish_Q3 = true;
 }
 #endregion
 
@@ -34,4 +38,11 @@ if npcstate == npcStates.failed {
 	sprite_index = spr_GB_npc;
 	npcname = "Mr. Floaty";
 	npcQuest = false;
+	timeQuest = false;
+	global.Q_freeFish = 4;
+		if obj_achievement.steam_fish_Q4 == false {
+		obj_achievement.last_achiev = "steam_fish_Q4"
+		obj_achievement.steam_fish_Q4 = true;
+	}
+
 }

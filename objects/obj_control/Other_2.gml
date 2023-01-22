@@ -10,6 +10,9 @@ global.WeedCount = 4;
 global.CreeperCount = 2;
 global.StickCount = 0;
 
+global.CompleteQTotal = 0;
+audio_set = "on";
+
 
 enum npcStates {
 	idle,

@@ -13,3 +13,9 @@ if (_fish || _water) {
 else {
 	midQuest = false;
 }
+
+if instance_exists(obj_ui_dxClose){
+	if npcstate = npcStates.idle || npcstate = npcStates.failed {
+		last_quest = global.Q_birdQ_Name;
+	}
+}

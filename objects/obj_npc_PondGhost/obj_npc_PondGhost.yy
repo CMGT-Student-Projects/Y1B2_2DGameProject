@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_PondGhost",
   "spriteId": {
-    "name": "spr_GB_npc",
-    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
+    "name": "spr_npc_wistfulghost",
+    "path": "sprites/spr_npc_wistfulghost/spr_npc_wistfulghost.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,7 +27,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":27,"eventType":9,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questMid02","varType":2,"value":"\"npc state: waiting\\n\\n02\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questMid03","varType":2,"value":"\"npc state: waiting\\n\\n03\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
@@ -36,6 +42,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questMid06","varType":2,"value":"\"npc state: waiting\\n\\n06\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questMid07","varType":2,"value":"\"npc state: waiting\\n\\n07\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"questMid08","varType":2,"value":"\"npc state: waiting\\n\\n08\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"image_alpha","varType":0,"value":".85","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dxYes","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"I have time..\"",},
@@ -55,7 +62,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dxCountTotal_Mid","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"8",},
   ],
   "parent": {
-    "name": "GB_NPCs",
-    "path": "folders/Objects/GB_NPCs.yy",
+    "name": "Final_NPCs",
+    "path": "folders/Objects/Final_NPCs.yy",
   },
 }

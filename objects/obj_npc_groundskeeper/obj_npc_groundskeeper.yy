@@ -41,7 +41,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"homeRoom","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"rm_game_graveyardMain",},
   ],
   "parent": {
-    "name": "GB_NPCs",
-    "path": "folders/Objects/GB_NPCs.yy",
+    "name": "No Time",
+    "path": "folders/Objects/GB_NPCs/No Time.yy",
   },
 }

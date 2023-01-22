@@ -1,6 +1,7 @@
 // Textbox variables
-textToShow = "Put whatever text you like into this string!"
-textWidth = 600;
+textToShow = "Put whatever text you like into this string!";
+dxComplete = "Close";
+textWidth = 620;
 lineHeight = 28;
 global.playerControl = false;
 

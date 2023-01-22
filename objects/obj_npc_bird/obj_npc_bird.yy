@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_npc_bird",
   "spriteId": {
-    "name": "spr_GB_npc",
-    "path": "sprites/spr_GB_npc/spr_GB_npc.yy",
+    "name": "spr_npc_Bird_Sick",
+    "path": "sprites/spr_npc_Bird_Sick/spr_npc_Bird_Sick.yy",
   },
   "solid": false,
   "visible": true,
@@ -50,11 +50,11 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"questComplete","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"The bird drinks the water and starts to look a little bit better. \\n\\nYou think it will probably be okay now.\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"questMid_branch01","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"You gently tip the water out for the bird. You spill most of it, but the bird looks a lot happier already.\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"timeQuest","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"True",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"timeLimit","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"6",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"timeLimit","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"4",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"failText","path":"objects/obj_par_npc/obj_par_npc.yy",},"objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"The bird looks happy! You can see through it, so you're probably a little late to save it.\"",},
   ],
   "parent": {
-    "name": "GB_NPCs",
-    "path": "folders/Objects/GB_NPCs.yy",
+    "name": "Final_NPCs",
+    "path": "folders/Objects/Final_NPCs.yy",
   },
 }

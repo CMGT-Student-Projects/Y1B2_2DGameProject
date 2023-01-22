@@ -13,15 +13,15 @@ if (bird_timeStart != noone) {
 		bird_time = noone;
 	}
 }
-
+// Fade the box (delay set in Room Start)
 if delay <=0 {
 	image_alpha -= fadeSpeed;
 	if (image_alpha <=0 ) {
 		drawBox = false;
 	}
 }
+// Countdown to drawBox fade
 else {
 	delay --
 }
 
-show_debug_message(delay)

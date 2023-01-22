@@ -1,6 +1,5 @@
 
 
-
 // Title
 depth=-y;
 
@@ -76,7 +75,12 @@ if(hauntTarget == noone && hauntTargetItem == noone) {
 }
 else {
 	if  (hauntTarget != noone || hauntTargetItem != noone) {
-	sprite_index = hauntTargetSpr;
+		if hauntTargetSpr = spr_Stick_Fire {
+			sprite_index = spr_Stick_Fire_Upright
+		}
+		else {
+		sprite_index = hauntTargetSpr;
+		}
 	}
 }
 
@@ -93,14 +97,17 @@ depth =-y;
 	}
 #region Popup prompts: NPCs
 // Pop up prompt NPC
+var _tall = nearbyNPC.sprite_height;
+var _overhead = -_tall - 25;
+
 	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.ready || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.ready) {
-		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y+_overhead);
 	}
 	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.waiting || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.waiting) {
-		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y+_overhead);
 	}
 	if (npcPrompt == noone && nearbyNPC.npcstate==npcStates.complete || npcPrompt == undefined && nearbyNPC.npcstate==npcStates.complete) {
-		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-125);
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y+_overhead);
 	}
 	#endregion
 }
@@ -122,12 +129,12 @@ depth =-y;
 		
 	}
 
-
+/*
 // Tutorial Hovers
 if (tutorial==0) {
 	instance_create_depth(x,y-200,-10000,obj_tut_wasd);
 	tutorial=1
-}
+}*/
 
 #region NPC Dialogue Arrays questBegin, questMid
 //NPC dialogue [npc quest count][count#]
@@ -208,3 +215,4 @@ if(nearbyNPC){
 
 }
 #endregion
+

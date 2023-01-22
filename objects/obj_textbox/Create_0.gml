@@ -3,7 +3,7 @@ textToShow = "Put whatever text you like into this string!"
 textWidth = 300;
 lineHeight = 28;
 global.playerControl = false;
-
+depth = -99999999;
 fadeMe = 0;
 fadeSpeed = 0.1;
 image_alpha = 0;

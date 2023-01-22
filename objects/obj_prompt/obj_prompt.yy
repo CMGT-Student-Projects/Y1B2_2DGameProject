@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_prompt",
   "spriteId": {
-    "name": "spr_ui_prompt_strip",
-    "path": "sprites/spr_ui_prompt_strip/spr_ui_prompt_strip.yy",
+    "name": "spr_ui_prompt",
+    "path": "sprites/spr_ui_prompt/spr_ui_prompt.yy",
   },
   "solid": false,
   "visible": true,

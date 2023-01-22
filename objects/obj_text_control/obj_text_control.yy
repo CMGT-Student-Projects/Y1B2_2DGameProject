@@ -10,7 +10,7 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "1_Title",
-    "path": "folders/Objects/1_Title.yy",
+    "name": "0_Title",
+    "path": "folders/Objects/0_Title.yy",
   },
 }

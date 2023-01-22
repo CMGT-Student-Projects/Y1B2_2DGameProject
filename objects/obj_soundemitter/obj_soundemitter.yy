@@ -33,7 +33,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"useSound","path":"objects/obj_par_environment/obj_par_environment.yy",},"objectId":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"value":"mus_RetroCassette",},
   ],
   "parent": {
-    "name": "Control",
-    "path": "folders/Objects/Control.yy",
+    "name": "Effects",
+    "path": "folders/Objects/Control/Effects.yy",
   },
 }

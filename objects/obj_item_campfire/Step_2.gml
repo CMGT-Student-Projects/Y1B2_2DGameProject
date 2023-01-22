@@ -8,9 +8,9 @@ else if itemName = "Lively Campfire" {
 }
 
 
-if (sprite_index == spr_GB_Item && itemName == "Lively Campfire") {
+if (sprite_index == spr_env_campfire_lively && itemName == "Lively Campfire") {
 	if (global.zoneTime - timeStart > timeLimit) {
-		sprite_index = spr_GB_Item;
+		sprite_index = spr_env_campfire_out;
 		itemName = "Smoldering Campfire"
 		timeStart = noone;
 		timeLimit = noone;

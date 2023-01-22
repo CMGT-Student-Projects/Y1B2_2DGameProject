@@ -11,9 +11,12 @@ function scr_hauntITEM(_object){
 				_object.item_state = itemStates.isHaunted;
 				_object.persistent = true;
 				obj_player.hauntTargetItem = _object.id;
-				obj_player.hauntTargetSpr = _object.sprite_index;
 				obj_player.haunting = true;
 				obj_player.image_alpha = 1;
+
+				obj_player.hauntTargetSpr = _object.sprite_index;
+
+				
 			}
 		}
 	}

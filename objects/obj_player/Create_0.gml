@@ -1,3 +1,6 @@
+startx = x;
+starty = y;
+
 // Variables
 walkSpeed = 10;
 vx = 0;
@@ -20,13 +23,12 @@ myState = playerState.idle;
 haunting = false;
 startDust = 0;
 
-achoice = 0;
-bchoice = 0;
 
 enteredRoom = false;
+exitRoom = false;
 
-image_alpha=.7;
-
+image_alpha=.85;
+Q_statusBear = false;
 
 
 // Create listener and set orientation

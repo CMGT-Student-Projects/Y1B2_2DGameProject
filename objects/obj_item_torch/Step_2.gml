@@ -1,3 +1,4 @@
+/*
 if (timeQuest == true && global.zoneTime - timeStart > timeLimit) {
 	scr_hauntITEMoff(self);
 	itemName = "Stick";
@@ -7,3 +8,4 @@ if (timeQuest == true && global.zoneTime - timeStart > timeLimit) {
 	timeLimit = noone;
 	global.StickCount +=1;
 }
+*/

@@ -1,0 +1,1 @@
+Q_pending = 4 - global.CompleteQTotal;

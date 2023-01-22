@@ -6,7 +6,7 @@ textWidth = 650;
 lineHeight = 28;
 drawBox = false;
 image_alpha=0;
-delay = 60;
+delay = 80;
 
 fish_name = noone;
 fish_timeStart = noone;

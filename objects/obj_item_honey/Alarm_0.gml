@@ -1,11 +1,11 @@
 if create == true {
-	speed = 6;
+	speed = 7;
 	gravity = .2;
 	alarm [0] = 40;
 	create = false;
 	if instance_exists(obj_item_beehive){
 		speed = 6;
-		direction = 105;
+		direction = 110;
 	}
 	else{
 		if (obj_player.x - x <= 0) {

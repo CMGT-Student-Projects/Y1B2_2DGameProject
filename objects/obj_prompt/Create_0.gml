@@ -5,7 +5,7 @@ image_alpha = 0;
 
 
 // Set up bobbing effect
-shift = 0.5;
+shift = 0.2;
 alarm[1] = 40;
 
 /*

@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GB_Environment",
-    "path": "folders/Objects/GB_Environment.yy",
+    "name": "Effects_Fade",
+    "path": "folders/Objects/Effects_Fade.yy",
   },
 }

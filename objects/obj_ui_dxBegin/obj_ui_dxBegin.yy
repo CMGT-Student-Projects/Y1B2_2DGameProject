@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ui_dxBegin",
   "spriteId": {
-    "name": "spr_ui_dxBegin",
-    "path": "sprites/spr_ui_dxBegin/spr_ui_dxBegin.yy",
+    "name": "spr_ui_dxContinue",
+    "path": "sprites/spr_ui_dxContinue/spr_ui_dxContinue.yy",
   },
   "solid": false,
   "visible": true,

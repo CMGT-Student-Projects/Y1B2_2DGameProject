@@ -1,8 +1,8 @@
 // Textbox variables
 textToShow = "Put whatever text you like into this string!";
-textContinue = "Space: Continue";
-textClose = "Esc: Stop listening";
-textWidth = 650;
+dxContinue = "Continue";
+dxEscape = "ESC - placeholder";
+textWidth = 620;
 lineHeight = 28;
 global.playerControl = false;
 
