@@ -14,9 +14,9 @@ else
 // STOP HAUNTING THE THING
 if hauntTargetItem !=noone && !nearbyNPC {
 	scr_hauntITEMoff(hauntTargetItem);
-}
+	}
 if (hauntTarget!=noone && !nearbyNPC){
-		scr_hauntNPCoff(hauntTarget);
+	scr_hauntNPCoff(hauntTarget);
 	}	
 }
 

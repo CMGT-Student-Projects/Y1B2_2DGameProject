@@ -11,3 +11,7 @@ if global.ActiveQTotal > 0  {
 else {
 	drawBox = false;
 }
+
+if room == rm_game_credits {
+	instance_destroy()
+}

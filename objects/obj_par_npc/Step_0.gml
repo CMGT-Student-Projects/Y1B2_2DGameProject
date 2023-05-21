@@ -8,8 +8,6 @@ if (image_index == image_number) {
 // Depth sorting
 depth =-y;
 
-
-
 #region Change Appearance With State
 /*
 // Change appearance with state

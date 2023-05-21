@@ -11,37 +11,37 @@ draw_text(room_width/1.38,yy+50,subtitle);
 
 // Programming
 draw_set_font(fnt_textbox);
-draw_text(room_width/1.38,yy+250,"Programming, QA, Technical Art");
+draw_text(room_width/1.38,yy+150,"Programming, QA, Technical Art");
 draw_set_font(fnt_Q_track);
-draw_text(room_width/1.38,yy+280,RF_Jack);
+draw_text(room_width/1.38,yy+180,RF_Jack);
 
 // Design
 draw_set_font(fnt_textbox);
-draw_text(room_width/1.38,yy+350,"Quest and Level Design");
+draw_text(room_width/1.38,yy+250,"Quest and Level Design");
 draw_set_font(fnt_Q_track);
-draw_text(room_width/1.38,yy+380,RF_Bjorn);
+draw_text(room_width/1.38,yy+280,RF_Bjorn);
 
 // Environmental Art
 draw_set_font(fnt_textbox);
-draw_text(room_width/1.38,yy+450,"Environment and Item Art");
+draw_text(room_width/1.38,yy+350,"Environment and Item Art");
 draw_set_font(fnt_Q_track);
-draw_text(room_width/1.38,yy+480,RF_Zate);
+draw_text(room_width/1.38,yy+380,RF_Zate);
 
 // Environmental Art
 draw_set_font(fnt_textbox);
-draw_text(room_width/1.38,yy+550,"Character and UI Art");
+draw_text(room_width/1.38,yy+450,"Character and UI Art");
 draw_set_font(fnt_Q_track);
-draw_text(room_width/1.38,yy+580,RF_Eva);
+draw_text(room_width/1.38,yy+480,RF_Eva);
 
 // Music and Sound Design
 draw_set_font(fnt_textbox);
-draw_text(room_width/1.38,yy+650,"Music and Sound Design");
+draw_text(room_width/1.38,yy+550,"Music and Sound Design");
 draw_set_font(fnt_Q_track);
-draw_text(room_width/1.38,yy+680,"AI Generated via BandLab");
+draw_text(room_width/1.38,yy+580,"AI Generated via BandLab");
 
 // END
 draw_set_font(fnt_textbox);
-draw_text(room_width/1.38,yy+800,last_line);
+draw_text(room_width/1.38,yy+700,last_line);
 
 yy=yy-.9
 
@@ -51,11 +51,12 @@ if kickstarter == true {
 draw_sprite(spr_ui_dxContinue,0,_x,_y)
 // Draw Text
 draw_set_font(fnt_textbox);
-draw_set_halign(fa_center);
+draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 // Draw NPC Name
-draw_text_ext_color(_x-250,_y-185,string(global.playername),lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
+draw_text_ext_color(_x-350,_y-185,string(global.playername),lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
 // Draw Quest Text
+draw_set_halign(fa_center);
 draw_text_ext_color(_x,_y-110,"Thank you for playing!",lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
 draw_text_ext_color(_x,_y,"If you enjoyed your journey with " + string(global.playername) + ", please support us on Kickstarter for more memories and stories!",lineHeight,textWidth,c_white,c_white,c_white,c_white,image_alpha);
 // Draw "Button" instructions

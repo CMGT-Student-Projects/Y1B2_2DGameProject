@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
 
 function scr_PlaceTransition(_type) {
 	if (layer_exists("Fade")) {
@@ -14,22 +11,7 @@ function scr_PlaceTransition(_type) {
 	}
 	
 }
-/*
-function scr_TransitionStart (_roomtarget,_typeout,_typein) {
-	if (!global.midTransition) {
-		global.midTransition = true;
-		global.roomTarget = _roomtarget;
-		scr_PlaceTransition(_typeout);
-		layer_set_target_room(_roomtarget);
-		scr_PlaceTransition(_typein);
-		layer_reset_target_room();
-		return true;
-	}
-	else {
-		return false;
-	}
-}
-*/
+
 function scr_Moment_rm_goto(){
 	global.zoneTime += 1;
 
@@ -40,7 +22,6 @@ function scr_Moment_rm_goto(){
 function scr_Moment_TrsFinished () {
 	layer_sequence_destroy(self.elementID);
 }
-
 
 
 function scr_startgame() {

@@ -13,7 +13,7 @@ if (obj_player.haunting==true) {
 		// If empty fishbowl - quest to fill
 		if (obj_player.hauntTargetSpr == spr_npc_fishbowl_empty) {
 			if (!instance_exists(obj_ui_dxContinue)){
-				iii = instance_create_depth(obj_player.x,obj_player.y,-10000,obj_ui_dxContinue);
+				iii = instance_create_depth(obj_player.x,obj_player.y,-99999999,obj_ui_dxContinue);
 				iii.textToShow = dxQuestText;
 				iii.nameToShow = itemName;
 				iii.dxEscape = dxEscape;

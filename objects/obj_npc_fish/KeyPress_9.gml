@@ -14,3 +14,9 @@ if (room == rm_game_Pond) {
 	}
 }
 #endregion
+
+if collision_circle(x,y,200,obj_player,false,true) {
+	if instance_exists(obj_shadow_obj) {
+		instance_destroy(obj_shadow_obj)
+	}
+}

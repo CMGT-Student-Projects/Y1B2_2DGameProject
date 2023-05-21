@@ -1,10 +1,10 @@
 instance_create_layer(x, y,"Instances",obj_item_honey);
 global.playerControl = true;
-obj_player.image_alpha = .7;
+obj_player.image_alpha = .85;
+obj_player.haunting = false;
 
 
-
-if obj_player.sprite_index != spr_Stick_Fire_Upright {
+if smoke = false {
 	instance_destroy();
 	obj_player.haunting = false;
 }

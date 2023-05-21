@@ -1,5 +1,3 @@
-startx = x;
-starty = y;
 
 // Variables
 walkSpeed = 10;

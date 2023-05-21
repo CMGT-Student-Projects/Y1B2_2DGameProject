@@ -16,9 +16,6 @@
 					obj_achievement.steam_bees_fall = true;
 					obj_achievement.last_achiev = "steam_bees_fall"
 				}
-				if obj_player.sprite_index = spr_Stick_Fire_Upright {
-					scr_hauntITEMoff(obj_item_torch);
-				}
 			}
 		}
 	}

@@ -137,7 +137,7 @@ if (nearbyItem && global.playerControl == true) {
 #region // NPC TEXTbox based on npcStates enum
 if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 	_text = nearbyNPC.myText;
-	if(nearbyNPC.npcstate == npcStates.waiting && !instance_exists(obj_ui_dxBegin)) {
+	if(nearbyNPC.npcstate == npcStates.waiting && !instance_exists(obj_ui_dxBegin) && !instance_exists(obj_ui_dxClose)) {
 	
 		if (!instance_exists(obj_textbox)) {
 			_waitingtext = nearbyNPC.waitingText;
@@ -148,7 +148,7 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 	}
 	if(nearbyNPC.npcstate == npcStates.idle) {
 	
-		if (!instance_exists(obj_textbox)) {
+		if (!instance_exists(obj_textbox) && !instance_exists(obj_ui_dxBegin) && !instance_exists(obj_ui_dxClose)) {
 			_waitingtext = nearbyNPC.myText;
 		
 			iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-300,-99999999,obj_textbox);
@@ -156,7 +156,7 @@ if (nearbyNPC && global.playerControl == true && nearbyNPC.npcQuest == true) {
 		}
 	}	
 	if(nearbyNPC.npcstate == npcStates.decline) {
-		if (!instance_exists(obj_textbox)) {
+		if (!instance_exists(obj_textbox) && !instance_exists(obj_ui_dxBegin) && !instance_exists(obj_ui_dxClose)) {
 			_declinetext = nearbyNPC.declineText;
 
 			iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-300,-99999999,obj_textbox);

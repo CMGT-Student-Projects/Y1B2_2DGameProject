@@ -7,7 +7,7 @@ RF_Bjorn = "Bjorn Fahner"
 RF_Jack = "Jack Sell"
 
 gametitle = "Remember"
-subtitle = "Finding yourself again\n\na game designed by Reckless Force"
+subtitle = "Finding yourself again\n\na game created by Reckless Force"
 
 last_line = "Hanze CMGT: Year 1 Block 2"
 

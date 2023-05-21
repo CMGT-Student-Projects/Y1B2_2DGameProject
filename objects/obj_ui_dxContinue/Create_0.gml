@@ -2,7 +2,7 @@
 textToShow = "Put whatever text you like into this string!";
 dxContinue = "Continue";
 dxEscape = "ESC - placeholder";
-textWidth = 620;
+textWidth = 600;
 lineHeight = 28;
 global.playerControl = false;
 

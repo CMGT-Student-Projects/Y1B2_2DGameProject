@@ -6,5 +6,7 @@ if collision_circle(x,y,200,obj_player,false,true) {
 				obj_achievement.last_achiev = "steam_chatty_Q3"
 				obj_achievement.steam_chatty_Q3 = true;
 			}
+		fadeMe = true;
+		alarm[1] = 20;
 	}
 }

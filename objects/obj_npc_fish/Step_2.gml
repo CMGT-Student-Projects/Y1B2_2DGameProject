@@ -35,7 +35,7 @@ if (room == rm_game_Forest) {
 }
 
 if npcstate == npcStates.failed {
-	sprite_index = spr_GB_npc;
+	sprite_index = spr_npc_fishbowl_unalive;
 	npcname = "Mr. Floaty";
 	npcQuest = false;
 	timeQuest = false;

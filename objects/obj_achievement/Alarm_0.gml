@@ -9,5 +9,6 @@ if image_alpha <= 0
 {
 	last_achiev = noone;
 	drawBox = false;
+	fadeIn = false
 }
 

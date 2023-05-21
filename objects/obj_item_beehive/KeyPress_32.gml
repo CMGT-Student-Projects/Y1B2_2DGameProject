@@ -1,7 +1,6 @@
 if obj_player.sprite_index == spr_Stick_Fire_Upright {
 	if haunt = true && !instance_exists(obj_ui_dxClose){
 		if (global.playerControl==true && collision_circle(self.x,self.y,obj_player.lookRange,obj_player,false,true)) {
-			
 			haunt = false;
 			var _questdx = dxQuestText;
 			var _name = itemName;
@@ -20,9 +19,11 @@ if obj_player.sprite_index == spr_Stick_Fire_Upright {
 			Shake = true;
 			startx = x;
 			starty = y;
-			alarm[0] = 5;
+			alarm [2] = 75;
 			smoke = true;
 			global.Q_honeyPlease = 2;
+			scr_hauntITEMoff(obj_item_torch);
+			instance_destroy(obj_item_torch);
 		}
 	}
 }

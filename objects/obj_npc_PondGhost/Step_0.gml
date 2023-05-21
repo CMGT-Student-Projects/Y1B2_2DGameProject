@@ -11,6 +11,12 @@
 			speed = .7;
 			sprite_index = spr_PondGhost_left;			
 			break;
+			
+		case 2:
+			direction = 270;
+			speed = .7;
+			sprite_index = spr_npc_wistfulghost;			
+			break;
 	}
  }
  else {
@@ -27,3 +33,4 @@
  if startx -x <= -150 {
 	 walkies = 1
  }
+
